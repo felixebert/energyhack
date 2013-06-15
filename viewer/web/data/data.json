@@ -1,0 +1,2653 @@
+[{
+  "scale": "DAY",
+  "district":   {
+    "@name": "Pankow",
+    "period":     {
+      "@begin": "2013-06-15T12:00:00+02:00",
+      "@end": "2013-06-15T19:15:00+02:00",
+      "districtTimestampData":       [
+                {
+          "@value": "2013-06-15T12:00:00+02:00",
+          "usage": "0",
+          "generation": "0",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T12:15:00+02:00",
+          "usage": "131.936634366",
+          "generation": "3.30511",
+          "feed": "148.9701",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T12:30:00+02:00",
+          "usage": "131.650988672",
+          "generation": "3.30511",
+          "feed": "148.9601",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T12:45:00+02:00",
+          "usage": "130.35772172",
+          "generation": "3.30511",
+          "feed": "147.0872",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T13:00:00+02:00",
+          "usage": "128.9597591",
+          "generation": "3.35390",
+          "feed": "144.5177",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T13:15:00+02:00",
+          "usage": "126.22308993",
+          "generation": "3.35390",
+          "feed": "142.6981",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T13:30:00+02:00",
+          "usage": "124.745578260",
+          "generation": "3.35390",
+          "feed": "141.2829",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T13:45:00+02:00",
+          "usage": "124.722036312",
+          "generation": "3.35390",
+          "feed": "141.9305",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T14:00:00+02:00",
+          "usage": "123.631653108",
+          "generation": "3.30217",
+          "feed": "142.1526",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T14:15:00+02:00",
+          "usage": "123.764650931",
+          "generation": "3.30217",
+          "feed": "141.9449",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T14:30:00+02:00",
+          "usage": "122.417402025",
+          "generation": "3.30217",
+          "feed": "141.9305",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T14:45:00+02:00",
+          "usage": "120.231463482",
+          "generation": "3.30217",
+          "feed": "139.9409",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T15:00:00+02:00",
+          "usage": "119.36262198",
+          "generation": "3.22243",
+          "feed": "136.7139",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T15:15:00+02:00",
+          "usage": "118.154040746",
+          "generation": "3.22243",
+          "feed": "134.952",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T15:30:00+02:00",
+          "usage": "119.194998909",
+          "generation": "3.22243",
+          "feed": "136.4695",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T15:45:00+02:00",
+          "usage": "118.77156984",
+          "generation": "3.22243",
+          "feed": "136.495",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T16:00:00+02:00",
+          "usage": "118.345286100",
+          "generation": "3.20632",
+          "feed": "135.9029",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T16:15:00+02:00",
+          "usage": "120.264874984",
+          "generation": "3.20632",
+          "feed": "137.6481",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T16:30:00+02:00",
+          "usage": "120.370081986",
+          "generation": "3.20632",
+          "feed": "138.7679",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T16:45:00+02:00",
+          "usage": "120.441690693",
+          "generation": "3.20632",
+          "feed": "139.06",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T17:00:00+02:00",
+          "usage": "121.121948206",
+          "generation": "3.18257",
+          "feed": "138.1568",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T17:15:00+02:00",
+          "usage": "118.685261826",
+          "generation": "3.18257",
+          "feed": "134.4888",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T17:30:00+02:00",
+          "usage": "120.460355148",
+          "generation": "3.18257",
+          "feed": "135.6185",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T17:45:00+02:00",
+          "usage": "120.263164344",
+          "generation": "3.18257",
+          "feed": "137.2782",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T18:00:00+02:00",
+          "usage": "121.788613234",
+          "generation": "3.14184",
+          "feed": "138.5112",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T18:15:00+02:00",
+          "usage": "122.374565049",
+          "generation": "3.14184",
+          "feed": "138.5057",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T18:30:00+02:00",
+          "usage": "123.43367344",
+          "generation": "3.14184",
+          "feed": "139.1667",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T18:45:00+02:00",
+          "usage": "123.93715475",
+          "generation": "3.14184",
+          "feed": "140.162",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T19:00:00+02:00",
+          "usage": "124.163792853",
+          "generation": "3.03393",
+          "feed": "139.9931",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T19:15:00+02:00",
+          "usage": "123.554490956",
+          "generation": "3.03393",
+          "feed": "138.589",
+          "key-acount-usage": "0"
+        }
+      ]
+    }
+  }
+},{
+  "scale": "DAY",
+  "district":   {
+    "@name": "Lichtenberg",
+    "period":     {
+      "@begin": "2013-06-15T12:00:00+02:00",
+      "@end": "2013-06-15T19:15:00+02:00",
+      "districtTimestampData":       [
+                {
+          "@value": "2013-06-15T12:00:00+02:00",
+          "usage": "0",
+          "generation": "0",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T12:15:00+02:00",
+          "usage": "115.721013290",
+          "generation": "45.16830",
+          "feed": "0",
+          "key-acount-usage": "-0.13"
+        },
+                {
+          "@value": "2013-06-15T12:30:00+02:00",
+          "usage": "115.317217536",
+          "generation": "45.79550",
+          "feed": "0",
+          "key-acount-usage": "-0.1258"
+        },
+                {
+          "@value": "2013-06-15T12:45:00+02:00",
+          "usage": "114.201779808",
+          "generation": "43.73900",
+          "feed": "0",
+          "key-acount-usage": "-0.1978"
+        },
+                {
+          "@value": "2013-06-15T13:00:00+02:00",
+          "usage": "113.368406",
+          "generation": "44.24613",
+          "feed": "0",
+          "key-acount-usage": "-0.1271"
+        },
+                {
+          "@value": "2013-06-15T13:15:00+02:00",
+          "usage": "112.597546728",
+          "generation": "45.09523",
+          "feed": "0",
+          "key-acount-usage": "-0.054"
+        },
+                {
+          "@value": "2013-06-15T13:30:00+02:00",
+          "usage": "111.389678788",
+          "generation": "45.25923",
+          "feed": "0",
+          "key-acount-usage": "0.1231"
+        },
+                {
+          "@value": "2013-06-15T13:45:00+02:00",
+          "usage": "110.722457938",
+          "generation": "44.56923",
+          "feed": "0",
+          "key-acount-usage": "-0.0151"
+        },
+                {
+          "@value": "2013-06-15T14:00:00+02:00",
+          "usage": "110.225228976",
+          "generation": "44.27382",
+          "feed": "0",
+          "key-acount-usage": "0.1027"
+        },
+                {
+          "@value": "2013-06-15T14:15:00+02:00",
+          "usage": "109.74089469",
+          "generation": "43.49782",
+          "feed": "0",
+          "key-acount-usage": "-0.0371"
+        },
+                {
+          "@value": "2013-06-15T14:30:00+02:00",
+          "usage": "109.073373685",
+          "generation": "43.71202",
+          "feed": "0",
+          "key-acount-usage": "-0.1973"
+        },
+                {
+          "@value": "2013-06-15T14:45:00+02:00",
+          "usage": "107.382314461",
+          "generation": "43.82962",
+          "feed": "0",
+          "key-acount-usage": "-0.3047"
+        },
+                {
+          "@value": "2013-06-15T15:00:00+02:00",
+          "usage": "106.70856668",
+          "generation": "43.50821",
+          "feed": "0",
+          "key-acount-usage": "-0.268"
+        },
+                {
+          "@value": "2013-06-15T15:15:00+02:00",
+          "usage": "106.030763078",
+          "generation": "42.23911",
+          "feed": "0",
+          "key-acount-usage": "-0.0218"
+        },
+                {
+          "@value": "2013-06-15T15:30:00+02:00",
+          "usage": "106.3027045",
+          "generation": "42.47951",
+          "feed": "0",
+          "key-acount-usage": "-0.0382"
+        },
+                {
+          "@value": "2013-06-15T15:45:00+02:00",
+          "usage": "106.471729808",
+          "generation": "42.24221",
+          "feed": "0",
+          "key-acount-usage": "0.026"
+        },
+                {
+          "@value": "2013-06-15T16:00:00+02:00",
+          "usage": "106.226095060",
+          "generation": "41.94369",
+          "feed": "0",
+          "key-acount-usage": "-0.1502"
+        },
+                {
+          "@value": "2013-06-15T16:15:00+02:00",
+          "usage": "106.162361268",
+          "generation": "41.47329",
+          "feed": "0",
+          "key-acount-usage": "-0.1969"
+        },
+                {
+          "@value": "2013-06-15T16:30:00+02:00",
+          "usage": "105.928492823",
+          "generation": "42.01769",
+          "feed": "0",
+          "key-acount-usage": "-0.2782"
+        },
+                {
+          "@value": "2013-06-15T16:45:00+02:00",
+          "usage": "106.152091418",
+          "generation": "42.09529",
+          "feed": "0",
+          "key-acount-usage": "-0.0709"
+        },
+                {
+          "@value": "2013-06-15T17:00:00+02:00",
+          "usage": "105.768962846",
+          "generation": "42.33870",
+          "feed": "0",
+          "key-acount-usage": "-0.0284"
+        },
+                {
+          "@value": "2013-06-15T17:15:00+02:00",
+          "usage": "105.639200016",
+          "generation": "43.30690",
+          "feed": "0",
+          "key-acount-usage": "-0.1404"
+        },
+                {
+          "@value": "2013-06-15T17:30:00+02:00",
+          "usage": "106.946464980",
+          "generation": "43.67640",
+          "feed": "0",
+          "key-acount-usage": "-0.1889"
+        },
+                {
+          "@value": "2013-06-15T17:45:00+02:00",
+          "usage": "106.643182406",
+          "generation": "44.57280",
+          "feed": "0",
+          "key-acount-usage": "-0.2911"
+        },
+                {
+          "@value": "2013-06-15T18:00:00+02:00",
+          "usage": "108.182959370",
+          "generation": "43.90603",
+          "feed": "0",
+          "key-acount-usage": "-0.2591"
+        },
+                {
+          "@value": "2013-06-15T18:15:00+02:00",
+          "usage": "108.46991419",
+          "generation": "44.62983",
+          "feed": "0",
+          "key-acount-usage": "-0.1838"
+        },
+                {
+          "@value": "2013-06-15T18:30:00+02:00",
+          "usage": "108.96755552",
+          "generation": "44.39903",
+          "feed": "0",
+          "key-acount-usage": "-0.3618"
+        },
+                {
+          "@value": "2013-06-15T18:45:00+02:00",
+          "usage": "109.870195863",
+          "generation": "44.01843",
+          "feed": "0",
+          "key-acount-usage": "-0.0933"
+        },
+                {
+          "@value": "2013-06-15T19:00:00+02:00",
+          "usage": "110.151310833",
+          "generation": "43.34870",
+          "feed": "0",
+          "key-acount-usage": "0.1191"
+        },
+                {
+          "@value": "2013-06-15T19:15:00+02:00",
+          "usage": "110.616214361",
+          "generation": "43.99060",
+          "feed": "0",
+          "key-acount-usage": "0.0662"
+        }
+      ]
+    }
+  }
+},{
+  "scale": "DAY",
+  "district":   {
+    "@name": "Marzahn-Hellersdorf",
+    "period":     {
+      "@begin": "2013-06-15T12:00:00+02:00",
+      "@end": "2013-06-15T19:15:00+02:00",
+      "districtTimestampData":       [
+                {
+          "@value": "2013-06-15T12:00:00+02:00",
+          "usage": "0",
+          "generation": "0",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T12:15:00+02:00",
+          "usage": "69.105211482",
+          "generation": "0.29873",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T12:30:00+02:00",
+          "usage": "68.464626048",
+          "generation": "0.29873",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T12:45:00+02:00",
+          "usage": "67.359232900",
+          "generation": "0.29873",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T13:00:00+02:00",
+          "usage": "65.6775753",
+          "generation": "0.27496",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T13:15:00+02:00",
+          "usage": "64.151267313",
+          "generation": "0.27496",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T13:30:00+02:00",
+          "usage": "63.574562724",
+          "generation": "0.27496",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T13:45:00+02:00",
+          "usage": "63.382226705",
+          "generation": "0.27496",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T14:00:00+02:00",
+          "usage": "63.117428558",
+          "generation": "0.22408",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T14:15:00+02:00",
+          "usage": "62.818007813",
+          "generation": "0.22408",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T14:30:00+02:00",
+          "usage": "63.342565020",
+          "generation": "0.22408",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T14:45:00+02:00",
+          "usage": "62.511402564",
+          "generation": "0.22408",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T15:00:00+02:00",
+          "usage": "60.68124138",
+          "generation": "0.21741",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T15:15:00+02:00",
+          "usage": "60.063406984",
+          "generation": "0.21741",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T15:30:00+02:00",
+          "usage": "60.442199483",
+          "generation": "0.21741",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T15:45:00+02:00",
+          "usage": "60.625977984",
+          "generation": "0.21741",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T16:00:00+02:00",
+          "usage": "60.048562248",
+          "generation": "0.20156",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T16:15:00+02:00",
+          "usage": "61.165990472",
+          "generation": "0.20156",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T16:30:00+02:00",
+          "usage": "61.395038331",
+          "generation": "0.20156",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T16:45:00+02:00",
+          "usage": "62.18262207",
+          "generation": "0.20156",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T17:00:00+02:00",
+          "usage": "61.367379598",
+          "generation": "0.17821",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T17:15:00+02:00",
+          "usage": "60.68526182",
+          "generation": "0.17821",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T17:30:00+02:00",
+          "usage": "61.697485976",
+          "generation": "0.17821",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T17:45:00+02:00",
+          "usage": "62.908419474",
+          "generation": "0.17821",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T18:00:00+02:00",
+          "usage": "62.985662632",
+          "generation": "0.20990",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T18:15:00+02:00",
+          "usage": "63.963158148",
+          "generation": "0.20990",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T18:30:00+02:00",
+          "usage": "64.16005904",
+          "generation": "0.20990",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T18:45:00+02:00",
+          "usage": "64.461460775",
+          "generation": "0.20990",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T19:00:00+02:00",
+          "usage": "64.371143718",
+          "generation": "0.18989",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T19:15:00+02:00",
+          "usage": "64.621481704",
+          "generation": "0.18989",
+          "feed": "0",
+          "key-acount-usage": "0"
+        }
+      ]
+    }
+  }
+},{
+  "scale": "DAY",
+  "district":   {
+    "@name": "Treptow-Koepenick",
+    "period":     {
+      "@begin": "2013-06-15T12:00:00+02:00",
+      "@end": "2013-06-15T19:15:00+02:00",
+      "districtTimestampData":       [
+                {
+          "@value": "2013-06-15T12:00:00+02:00",
+          "usage": "0",
+          "generation": "0",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T12:15:00+02:00",
+          "usage": "97.273975956",
+          "generation": "2.26136",
+          "feed": "240.0295",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T12:30:00+02:00",
+          "usage": "97.929962816",
+          "generation": "2.26136",
+          "feed": "239.4088",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T12:45:00+02:00",
+          "usage": "95.562381944",
+          "generation": "2.26136",
+          "feed": "237.3532",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T13:00:00+02:00",
+          "usage": "94.0436892",
+          "generation": "2.23902",
+          "feed": "234.4126",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T13:15:00+02:00",
+          "usage": "92.416700229",
+          "generation": "2.23902",
+          "feed": "230.6897",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T13:30:00+02:00",
+          "usage": "92.105237496",
+          "generation": "2.23902",
+          "feed": "231.9488",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T13:45:00+02:00",
+          "usage": "93.631186132",
+          "generation": "2.23902",
+          "feed": "231.4459",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T14:00:00+02:00",
+          "usage": "92.622887156",
+          "generation": "2.19119",
+          "feed": "232.2928",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T14:15:00+02:00",
+          "usage": "92.003331571",
+          "generation": "2.19119",
+          "feed": "231.4674",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T14:30:00+02:00",
+          "usage": "90.86154285",
+          "generation": "2.19119",
+          "feed": "227.046",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T14:45:00+02:00",
+          "usage": "87.728653233",
+          "generation": "2.19119",
+          "feed": "222.6431",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T15:00:00+02:00",
+          "usage": "87.98255376",
+          "generation": "2.18492",
+          "feed": "224.4762",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T15:15:00+02:00",
+          "usage": "87.282355538",
+          "generation": "2.18492",
+          "feed": "223.3883",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T15:30:00+02:00",
+          "usage": "87.967355515",
+          "generation": "2.18492",
+          "feed": "222.9453",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T15:45:00+02:00",
+          "usage": "88.35838440",
+          "generation": "2.18492",
+          "feed": "222.233",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T16:00:00+02:00",
+          "usage": "87.769944912",
+          "generation": "2.17002",
+          "feed": "223.3902",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T16:15:00+02:00",
+          "usage": "88.082415872",
+          "generation": "2.17002",
+          "feed": "225.8374",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T16:30:00+02:00",
+          "usage": "89.564665971",
+          "generation": "2.17002",
+          "feed": "224.9306",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T16:45:00+02:00",
+          "usage": "88.221798261",
+          "generation": "2.17002",
+          "feed": "223.2224",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T17:00:00+02:00",
+          "usage": "87.963937110",
+          "generation": "2.14807",
+          "feed": "221.9997",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T17:15:00+02:00",
+          "usage": "88.301461022",
+          "generation": "2.14807",
+          "feed": "221.0511",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T17:30:00+02:00",
+          "usage": "88.717948452",
+          "generation": "2.14807",
+          "feed": "222.5412",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T17:45:00+02:00",
+          "usage": "90.868287672",
+          "generation": "2.14807",
+          "feed": "223.3784",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T18:00:00+02:00",
+          "usage": "90.141921796",
+          "generation": "2.17786",
+          "feed": "224.8721",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T18:15:00+02:00",
+          "usage": "91.702759224",
+          "generation": "2.17786",
+          "feed": "223.9512",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T18:30:00+02:00",
+          "usage": "90.99131272",
+          "generation": "2.17786",
+          "feed": "223.6677",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T18:45:00+02:00",
+          "usage": "91.063249971",
+          "generation": "2.17786",
+          "feed": "224.6901",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T19:00:00+02:00",
+          "usage": "91.86364625",
+          "generation": "2.15905",
+          "feed": "225.4799",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T19:15:00+02:00",
+          "usage": "91.496494481",
+          "generation": "2.15905",
+          "feed": "227.2183",
+          "key-acount-usage": "0"
+        }
+      ]
+    }
+  }
+},{
+  "scale": "DAY",
+  "district":   {
+    "@name": "Neukoelln",
+    "period":     {
+      "@begin": "2013-06-15T12:00:00+02:00",
+      "@end": "2013-06-15T19:15:00+02:00",
+      "districtTimestampData":       [
+                {
+          "@value": "2013-06-15T12:00:00+02:00",
+          "usage": "0",
+          "generation": "0",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T12:15:00+02:00",
+          "usage": "99.136115352",
+          "generation": "20.49259",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T12:30:00+02:00",
+          "usage": "100.054868928",
+          "generation": "20.57669",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T12:45:00+02:00",
+          "usage": "99.580496132",
+          "generation": "20.50539",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T13:00:00+02:00",
+          "usage": "97.8681334",
+          "generation": "20.33414",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T13:15:00+02:00",
+          "usage": "97.486762191",
+          "generation": "19.59244",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T13:30:00+02:00",
+          "usage": "96.845715292",
+          "generation": "19.59104",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T13:45:00+02:00",
+          "usage": "97.125678427",
+          "generation": "19.50424",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T14:00:00+02:00",
+          "usage": "96.173215662",
+          "generation": "19.13313",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T14:15:00+02:00",
+          "usage": "96.504144458",
+          "generation": "19.13063",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T14:30:00+02:00",
+          "usage": "95.306861355",
+          "generation": "19.10623",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T14:45:00+02:00",
+          "usage": "93.92200857",
+          "generation": "18.66403",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T15:00:00+02:00",
+          "usage": "93.19913070",
+          "generation": "18.50168",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T15:15:00+02:00",
+          "usage": "92.283588656",
+          "generation": "18.55548",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T15:30:00+02:00",
+          "usage": "92.862705857",
+          "generation": "18.56338",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T15:45:00+02:00",
+          "usage": "92.450403144",
+          "generation": "18.46438",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T16:00:00+02:00",
+          "usage": "92.14844004",
+          "generation": "18.52602",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T16:15:00+02:00",
+          "usage": "93.095908176",
+          "generation": "18.54592",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T16:30:00+02:00",
+          "usage": "92.457161775",
+          "generation": "18.50682",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T16:45:00+02:00",
+          "usage": "91.420966269",
+          "generation": "18.45542",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T17:00:00+02:00",
+          "usage": "91.307102054",
+          "generation": "18.53215",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T17:15:00+02:00",
+          "usage": "91.660840566",
+          "generation": "18.64155",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T17:30:00+02:00",
+          "usage": "92.113702856",
+          "generation": "18.64155",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T17:45:00+02:00",
+          "usage": "91.754594856",
+          "generation": "18.64155",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T18:00:00+02:00",
+          "usage": "91.77353036",
+          "generation": "18.65678",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T18:15:00+02:00",
+          "usage": "91.917443547",
+          "generation": "19.04978",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T18:30:00+02:00",
+          "usage": "92.2310928",
+          "generation": "19.38178",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T18:45:00+02:00",
+          "usage": "92.546934566",
+          "generation": "19.58848",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T19:00:00+02:00",
+          "usage": "91.934105536",
+          "generation": "19.66053",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T19:15:00+02:00",
+          "usage": "91.774837193",
+          "generation": "19.67233",
+          "feed": "0",
+          "key-acount-usage": "0"
+        }
+      ]
+    }
+  }
+},{
+  "scale": "DAY",
+  "district":   {
+    "@name": "Friedrichshain-Kreuzberg",
+    "period":     {
+      "@begin": "2013-06-15T12:00:00+02:00",
+      "@end": "2013-06-15T19:15:00+02:00",
+      "districtTimestampData":       [
+                {
+          "@value": "2013-06-15T12:00:00+02:00",
+          "usage": "0",
+          "generation": "0",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T12:15:00+02:00",
+          "usage": "127.436114504",
+          "generation": "0.32704",
+          "feed": "226.8745",
+          "key-acount-usage": "19.88"
+        },
+                {
+          "@value": "2013-06-15T12:30:00+02:00",
+          "usage": "128.224667280",
+          "generation": "0.32704",
+          "feed": "226.2426",
+          "key-acount-usage": "20.7363"
+        },
+                {
+          "@value": "2013-06-15T12:45:00+02:00",
+          "usage": "128.171170580",
+          "generation": "0.32704",
+          "feed": "225.2209",
+          "key-acount-usage": "20.4158"
+        },
+                {
+          "@value": "2013-06-15T13:00:00+02:00",
+          "usage": "127.3229404",
+          "generation": "0.32162",
+          "feed": "223.3153",
+          "key-acount-usage": "19.9687"
+        },
+                {
+          "@value": "2013-06-15T13:15:00+02:00",
+          "usage": "127.004299047",
+          "generation": "0.32162",
+          "feed": "219.8419",
+          "key-acount-usage": "20.4423"
+        },
+                {
+          "@value": "2013-06-15T13:30:00+02:00",
+          "usage": "126.365618660",
+          "generation": "0.32162",
+          "feed": "218.8056",
+          "key-acount-usage": "20.3671"
+        },
+                {
+          "@value": "2013-06-15T13:45:00+02:00",
+          "usage": "125.157666106",
+          "generation": "0.32162",
+          "feed": "217.5147",
+          "key-acount-usage": "19.9777"
+        },
+                {
+          "@value": "2013-06-15T14:00:00+02:00",
+          "usage": "125.902199876",
+          "generation": "0.31003",
+          "feed": "215.3482",
+          "key-acount-usage": "20.5001"
+        },
+                {
+          "@value": "2013-06-15T14:15:00+02:00",
+          "usage": "125.407190815",
+          "generation": "0.31003",
+          "feed": "214.6824",
+          "key-acount-usage": "20.3325"
+        },
+                {
+          "@value": "2013-06-15T14:30:00+02:00",
+          "usage": "124.364536285",
+          "generation": "0.31003",
+          "feed": "214.0975",
+          "key-acount-usage": "19.9624"
+        },
+                {
+          "@value": "2013-06-15T14:45:00+02:00",
+          "usage": "124.012540452",
+          "generation": "0.31003",
+          "feed": "211.554",
+          "key-acount-usage": "19.8876"
+        },
+                {
+          "@value": "2013-06-15T15:00:00+02:00",
+          "usage": "123.96877818",
+          "generation": "0.30851",
+          "feed": "211.1829",
+          "key-acount-usage": "20.391"
+        },
+                {
+          "@value": "2013-06-15T15:15:00+02:00",
+          "usage": "123.044455370",
+          "generation": "0.30851",
+          "feed": "210.3939",
+          "key-acount-usage": "20.2326"
+        },
+                {
+          "@value": "2013-06-15T15:30:00+02:00",
+          "usage": "121.707068749",
+          "generation": "0.30851",
+          "feed": "211.3376",
+          "key-acount-usage": "19.5937"
+        },
+                {
+          "@value": "2013-06-15T15:45:00+02:00",
+          "usage": "122.087528072",
+          "generation": "0.30851",
+          "feed": "211.6399",
+          "key-acount-usage": "19.8359"
+        },
+                {
+          "@value": "2013-06-15T16:00:00+02:00",
+          "usage": "122.434971676",
+          "generation": "0.30490",
+          "feed": "210.3657",
+          "key-acount-usage": "20.23"
+        },
+                {
+          "@value": "2013-06-15T16:15:00+02:00",
+          "usage": "123.425724100",
+          "generation": "0.30490",
+          "feed": "213.8647",
+          "key-acount-usage": "20.2828"
+        },
+                {
+          "@value": "2013-06-15T16:30:00+02:00",
+          "usage": "123.356818947",
+          "generation": "0.30490",
+          "feed": "212.3633",
+          "key-acount-usage": "20.1576"
+        },
+                {
+          "@value": "2013-06-15T16:45:00+02:00",
+          "usage": "123.659819755",
+          "generation": "0.30490",
+          "feed": "213.5318",
+          "key-acount-usage": "20.2705"
+        },
+                {
+          "@value": "2013-06-15T17:00:00+02:00",
+          "usage": "122.81578368",
+          "generation": "0.29958",
+          "feed": "213.5375",
+          "key-acount-usage": "20.2915"
+        },
+                {
+          "@value": "2013-06-15T17:15:00+02:00",
+          "usage": "121.712844828",
+          "generation": "0.29958",
+          "feed": "212.9342",
+          "key-acount-usage": "19.8183"
+        },
+                {
+          "@value": "2013-06-15T17:30:00+02:00",
+          "usage": "122.232481872",
+          "generation": "0.29958",
+          "feed": "216.0264",
+          "key-acount-usage": "19.6432"
+        },
+                {
+          "@value": "2013-06-15T17:45:00+02:00",
+          "usage": "122.531665528",
+          "generation": "0.29958",
+          "feed": "215.504",
+          "key-acount-usage": "20.1439"
+        },
+                {
+          "@value": "2013-06-15T18:00:00+02:00",
+          "usage": "122.171157942",
+          "generation": "0.30680",
+          "feed": "216.6035",
+          "key-acount-usage": "19.8569"
+        },
+                {
+          "@value": "2013-06-15T18:15:00+02:00",
+          "usage": "122.064659444",
+          "generation": "0.30680",
+          "feed": "217.0914",
+          "key-acount-usage": "19.6706"
+        },
+                {
+          "@value": "2013-06-15T18:30:00+02:00",
+          "usage": "122.41040056",
+          "generation": "0.30680",
+          "feed": "217.3431",
+          "key-acount-usage": "19.5363"
+        },
+                {
+          "@value": "2013-06-15T18:45:00+02:00",
+          "usage": "122.756454645",
+          "generation": "0.30680",
+          "feed": "218.7731",
+          "key-acount-usage": "19.6354"
+        },
+                {
+          "@value": "2013-06-15T19:00:00+02:00",
+          "usage": "122.341507352",
+          "generation": "0.30224",
+          "feed": "218.898",
+          "key-acount-usage": "19.5412"
+        },
+                {
+          "@value": "2013-06-15T19:15:00+02:00",
+          "usage": "123.641170648",
+          "generation": "0.30224",
+          "feed": "218.774",
+          "key-acount-usage": "21.1166"
+        }
+      ]
+    }
+  }
+},{
+  "scale": "DAY",
+  "district":   {
+    "@name": "Mitte",
+    "period":     {
+      "@begin": "2013-06-15T12:00:00+02:00",
+      "@end": "2013-06-15T19:15:00+02:00",
+      "districtTimestampData":       [
+                {
+          "@value": "2013-06-15T12:00:00+02:00",
+          "usage": "0",
+          "generation": "0",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T12:15:00+02:00",
+          "usage": "301.076582358",
+          "generation": "44.23595",
+          "feed": "446.0468",
+          "key-acount-usage": "13.7223"
+        },
+                {
+          "@value": "2013-06-15T12:30:00+02:00",
+          "usage": "300.546904768",
+          "generation": "44.15595",
+          "feed": "447.934",
+          "key-acount-usage": "12.9718"
+        },
+                {
+          "@value": "2013-06-15T12:45:00+02:00",
+          "usage": "299.970804224",
+          "generation": "42.32085",
+          "feed": "446.9129",
+          "key-acount-usage": "12.9017"
+        },
+                {
+          "@value": "2013-06-15T13:00:00+02:00",
+          "usage": "300.1105664",
+          "generation": "40.80171",
+          "feed": "443.9189",
+          "key-acount-usage": "13.0899"
+        },
+                {
+          "@value": "2013-06-15T13:15:00+02:00",
+          "usage": "300.064200613",
+          "generation": "41.07961",
+          "feed": "443.0646",
+          "key-acount-usage": "14.0335"
+        },
+                {
+          "@value": "2013-06-15T13:30:00+02:00",
+          "usage": "300.195770748",
+          "generation": "40.26651",
+          "feed": "440.3201",
+          "key-acount-usage": "13.4842"
+        },
+                {
+          "@value": "2013-06-15T13:45:00+02:00",
+          "usage": "299.971479943",
+          "generation": "40.48701",
+          "feed": "437.1612",
+          "key-acount-usage": "14.366"
+        },
+                {
+          "@value": "2013-06-15T14:00:00+02:00",
+          "usage": "298.557076830",
+          "generation": "40.24302",
+          "feed": "435.0486",
+          "key-acount-usage": "14.2767"
+        },
+                {
+          "@value": "2013-06-15T14:15:00+02:00",
+          "usage": "298.621730981",
+          "generation": "40.09102",
+          "feed": "431.8186",
+          "key-acount-usage": "15.081"
+        },
+                {
+          "@value": "2013-06-15T14:30:00+02:00",
+          "usage": "296.54840380",
+          "generation": "41.08402",
+          "feed": "427.1204",
+          "key-acount-usage": "14.5129"
+        },
+                {
+          "@value": "2013-06-15T14:45:00+02:00",
+          "usage": "295.736570806",
+          "generation": "38.94432",
+          "feed": "421.7843",
+          "key-acount-usage": "15.0511"
+        },
+                {
+          "@value": "2013-06-15T15:00:00+02:00",
+          "usage": "295.53696308",
+          "generation": "37.74482",
+          "feed": "418.4309",
+          "key-acount-usage": "15.0812"
+        },
+                {
+          "@value": "2013-06-15T15:15:00+02:00",
+          "usage": "293.819577306",
+          "generation": "38.51672",
+          "feed": "415.9954",
+          "key-acount-usage": "14.9732"
+        },
+                {
+          "@value": "2013-06-15T15:30:00+02:00",
+          "usage": "295.073895244",
+          "generation": "40.59922",
+          "feed": "415.3817",
+          "key-acount-usage": "14.9121"
+        },
+                {
+          "@value": "2013-06-15T15:45:00+02:00",
+          "usage": "293.720593992",
+          "generation": "42.27362",
+          "feed": "415.6952",
+          "key-acount-usage": "14.4231"
+        },
+                {
+          "@value": "2013-06-15T16:00:00+02:00",
+          "usage": "294.432705824",
+          "generation": "42.58741",
+          "feed": "416.7779",
+          "key-acount-usage": "15.2021"
+        },
+                {
+          "@value": "2013-06-15T16:15:00+02:00",
+          "usage": "296.267375964",
+          "generation": "42.24161",
+          "feed": "417.2083",
+          "key-acount-usage": "15.2428"
+        },
+                {
+          "@value": "2013-06-15T16:30:00+02:00",
+          "usage": "295.241088155",
+          "generation": "42.45461",
+          "feed": "417.7493",
+          "key-acount-usage": "14.5451"
+        },
+                {
+          "@value": "2013-06-15T16:45:00+02:00",
+          "usage": "295.341479198",
+          "generation": "42.38931",
+          "feed": "414.3211",
+          "key-acount-usage": "14.4836"
+        },
+                {
+          "@value": "2013-06-15T17:00:00+02:00",
+          "usage": "292.487562052",
+          "generation": "42.36969",
+          "feed": "410.2394",
+          "key-acount-usage": "14.7063"
+        },
+                {
+          "@value": "2013-06-15T17:15:00+02:00",
+          "usage": "291.687296950",
+          "generation": "41.92209",
+          "feed": "411.3515",
+          "key-acount-usage": "15.0188"
+        },
+                {
+          "@value": "2013-06-15T17:30:00+02:00",
+          "usage": "293.129575112",
+          "generation": "43.86949",
+          "feed": "410.8281",
+          "key-acount-usage": "14.8563"
+        },
+                {
+          "@value": "2013-06-15T17:45:00+02:00",
+          "usage": "292.966965612",
+          "generation": "45.49899",
+          "feed": "413.9796",
+          "key-acount-usage": "14.4072"
+        },
+                {
+          "@value": "2013-06-15T18:00:00+02:00",
+          "usage": "293.675383390",
+          "generation": "46.71243",
+          "feed": "413.4146",
+          "key-acount-usage": "15.0037"
+        },
+                {
+          "@value": "2013-06-15T18:15:00+02:00",
+          "usage": "290.438927549",
+          "generation": "47.42323",
+          "feed": "413.8728",
+          "key-acount-usage": "14.9801"
+        },
+                {
+          "@value": "2013-06-15T18:30:00+02:00",
+          "usage": "288.25338976",
+          "generation": "47.79653",
+          "feed": "413.1346",
+          "key-acount-usage": "14.3731"
+        },
+                {
+          "@value": "2013-06-15T18:45:00+02:00",
+          "usage": "288.788292846",
+          "generation": "47.25523",
+          "feed": "415.1541",
+          "key-acount-usage": "14.4117"
+        },
+                {
+          "@value": "2013-06-15T19:00:00+02:00",
+          "usage": "287.733913674",
+          "generation": "46.56117",
+          "feed": "415.1266",
+          "key-acount-usage": "14.6816"
+        },
+                {
+          "@value": "2013-06-15T19:15:00+02:00",
+          "usage": "284.828102987",
+          "generation": "46.05907",
+          "feed": "413.1688",
+          "key-acount-usage": "14.4168"
+        }
+      ]
+    }
+  }
+},{
+  "scale": "DAY",
+  "district":   {
+    "@name": "Tempelhof-Schöneberg",
+    "period":     {
+      "@begin": "2013-06-15T12:00:00+02:00",
+      "@end": "2013-06-15T19:15:00+02:00",
+      "districtTimestampData":       [
+                {
+          "@value": "2013-06-15T12:00:00+02:00",
+          "usage": "0",
+          "generation": "0",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T12:15:00+02:00",
+          "usage": "0",
+          "generation": "0",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T12:30:00+02:00",
+          "usage": "0",
+          "generation": "0",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T12:45:00+02:00",
+          "usage": "0",
+          "generation": "0",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T13:00:00+02:00",
+          "usage": "0",
+          "generation": "0",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T13:15:00+02:00",
+          "usage": "0",
+          "generation": "0",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T13:30:00+02:00",
+          "usage": "0",
+          "generation": "0",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T13:45:00+02:00",
+          "usage": "0",
+          "generation": "0",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T14:00:00+02:00",
+          "usage": "0",
+          "generation": "0",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T14:15:00+02:00",
+          "usage": "0",
+          "generation": "0",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T14:30:00+02:00",
+          "usage": "0",
+          "generation": "0",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T14:45:00+02:00",
+          "usage": "0",
+          "generation": "0",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T15:00:00+02:00",
+          "usage": "0",
+          "generation": "0",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T15:15:00+02:00",
+          "usage": "0",
+          "generation": "0",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T15:30:00+02:00",
+          "usage": "0",
+          "generation": "0",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T15:45:00+02:00",
+          "usage": "0",
+          "generation": "0",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T16:00:00+02:00",
+          "usage": "0",
+          "generation": "0",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T16:15:00+02:00",
+          "usage": "0",
+          "generation": "0",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T16:30:00+02:00",
+          "usage": "0",
+          "generation": "0",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T16:45:00+02:00",
+          "usage": "0",
+          "generation": "0",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T17:00:00+02:00",
+          "usage": "0",
+          "generation": "0",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T17:15:00+02:00",
+          "usage": "0",
+          "generation": "0",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T17:30:00+02:00",
+          "usage": "0",
+          "generation": "0",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T17:45:00+02:00",
+          "usage": "0",
+          "generation": "0",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T18:00:00+02:00",
+          "usage": "0",
+          "generation": "0",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T18:15:00+02:00",
+          "usage": "0",
+          "generation": "0",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T18:30:00+02:00",
+          "usage": "0",
+          "generation": "0",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T18:45:00+02:00",
+          "usage": "0",
+          "generation": "0",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T19:00:00+02:00",
+          "usage": "0",
+          "generation": "0",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T19:15:00+02:00",
+          "usage": "0",
+          "generation": "0",
+          "feed": "0",
+          "key-acount-usage": "0"
+        }
+      ]
+    }
+  }
+},{
+  "scale": "DAY",
+  "district":   {
+    "@name": "Steglitz-Zehlendorf",
+    "period":     {
+      "@begin": "2013-06-15T12:00:00+02:00",
+      "@end": "2013-06-15T19:15:00+02:00",
+      "districtTimestampData":       [
+                {
+          "@value": "2013-06-15T12:00:00+02:00",
+          "usage": "0",
+          "generation": "0",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T12:15:00+02:00",
+          "usage": "146.192356324",
+          "generation": "0.63919",
+          "feed": "0",
+          "key-acount-usage": "2.0803"
+        },
+                {
+          "@value": "2013-06-15T12:30:00+02:00",
+          "usage": "146.519409008",
+          "generation": "0.63919",
+          "feed": "0",
+          "key-acount-usage": "2.079"
+        },
+                {
+          "@value": "2013-06-15T12:45:00+02:00",
+          "usage": "146.360036992",
+          "generation": "0.63919",
+          "feed": "0",
+          "key-acount-usage": "2.0515"
+        },
+                {
+          "@value": "2013-06-15T13:00:00+02:00",
+          "usage": "146.2789017",
+          "generation": "0.62853",
+          "feed": "0",
+          "key-acount-usage": "2.0799"
+        },
+                {
+          "@value": "2013-06-15T13:15:00+02:00",
+          "usage": "145.102396853",
+          "generation": "0.62853",
+          "feed": "0",
+          "key-acount-usage": "2.0828"
+        },
+                {
+          "@value": "2013-06-15T13:30:00+02:00",
+          "usage": "145.377789356",
+          "generation": "0.62853",
+          "feed": "0",
+          "key-acount-usage": "2.0465"
+        },
+                {
+          "@value": "2013-06-15T13:45:00+02:00",
+          "usage": "144.258776539",
+          "generation": "0.62853",
+          "feed": "0",
+          "key-acount-usage": "2.0542"
+        },
+                {
+          "@value": "2013-06-15T14:00:00+02:00",
+          "usage": "143.485207032",
+          "generation": "0.60571",
+          "feed": "0",
+          "key-acount-usage": "2.0425"
+        },
+                {
+          "@value": "2013-06-15T14:15:00+02:00",
+          "usage": "141.431806358",
+          "generation": "0.60571",
+          "feed": "0",
+          "key-acount-usage": "2.0503"
+        },
+                {
+          "@value": "2013-06-15T14:30:00+02:00",
+          "usage": "139.801688465",
+          "generation": "0.60571",
+          "feed": "0",
+          "key-acount-usage": "2.0507"
+        },
+                {
+          "@value": "2013-06-15T14:45:00+02:00",
+          "usage": "138.448086777",
+          "generation": "0.60571",
+          "feed": "0",
+          "key-acount-usage": "2.0592"
+        },
+                {
+          "@value": "2013-06-15T15:00:00+02:00",
+          "usage": "137.44433604",
+          "generation": "0.60272",
+          "feed": "0",
+          "key-acount-usage": "2.067"
+        },
+                {
+          "@value": "2013-06-15T15:15:00+02:00",
+          "usage": "136.714341474",
+          "generation": "0.60272",
+          "feed": "0",
+          "key-acount-usage": "2.0452"
+        },
+                {
+          "@value": "2013-06-15T15:30:00+02:00",
+          "usage": "135.975766211",
+          "generation": "0.60272",
+          "feed": "0",
+          "key-acount-usage": "2.0574"
+        },
+                {
+          "@value": "2013-06-15T15:45:00+02:00",
+          "usage": "135.914034264",
+          "generation": "0.60272",
+          "feed": "0",
+          "key-acount-usage": "2.076"
+        },
+                {
+          "@value": "2013-06-15T16:00:00+02:00",
+          "usage": "137.014776768",
+          "generation": "0.59561",
+          "feed": "0",
+          "key-acount-usage": "2.073"
+        },
+                {
+          "@value": "2013-06-15T16:15:00+02:00",
+          "usage": "136.832279504",
+          "generation": "0.59561",
+          "feed": "0",
+          "key-acount-usage": "2.0662"
+        },
+                {
+          "@value": "2013-06-15T16:30:00+02:00",
+          "usage": "137.582352431",
+          "generation": "0.59561",
+          "feed": "0",
+          "key-acount-usage": "2.0915"
+        },
+                {
+          "@value": "2013-06-15T16:45:00+02:00",
+          "usage": "136.228463234",
+          "generation": "0.59561",
+          "feed": "0",
+          "key-acount-usage": "2.0654"
+        },
+                {
+          "@value": "2013-06-15T17:00:00+02:00",
+          "usage": "135.494740344",
+          "generation": "0.58514",
+          "feed": "0",
+          "key-acount-usage": "2.0686"
+        },
+                {
+          "@value": "2013-06-15T17:15:00+02:00",
+          "usage": "135.933962556",
+          "generation": "0.58514",
+          "feed": "0",
+          "key-acount-usage": "2.0656"
+        },
+                {
+          "@value": "2013-06-15T17:30:00+02:00",
+          "usage": "135.389578508",
+          "generation": "0.58514",
+          "feed": "0",
+          "key-acount-usage": "2.0551"
+        },
+                {
+          "@value": "2013-06-15T17:45:00+02:00",
+          "usage": "136.593762654",
+          "generation": "0.58514",
+          "feed": "0",
+          "key-acount-usage": "2.0586"
+        },
+                {
+          "@value": "2013-06-15T18:00:00+02:00",
+          "usage": "137.022927936",
+          "generation": "0.59935",
+          "feed": "0",
+          "key-acount-usage": "2.05"
+        },
+                {
+          "@value": "2013-06-15T18:15:00+02:00",
+          "usage": "137.04142042",
+          "generation": "0.59935",
+          "feed": "0",
+          "key-acount-usage": "2.0614"
+        },
+                {
+          "@value": "2013-06-15T18:30:00+02:00",
+          "usage": "136.75154952",
+          "generation": "0.59935",
+          "feed": "0",
+          "key-acount-usage": "2.0721"
+        },
+                {
+          "@value": "2013-06-15T18:45:00+02:00",
+          "usage": "137.935705768",
+          "generation": "0.59935",
+          "feed": "0",
+          "key-acount-usage": "2.0656"
+        },
+                {
+          "@value": "2013-06-15T19:00:00+02:00",
+          "usage": "137.357268409",
+          "generation": "0.59038",
+          "feed": "0",
+          "key-acount-usage": "2.0492"
+        },
+                {
+          "@value": "2013-06-15T19:15:00+02:00",
+          "usage": "137.607085921",
+          "generation": "0.59038",
+          "feed": "0",
+          "key-acount-usage": "2.0522"
+        }
+      ]
+    }
+  }
+},{
+  "scale": "DAY",
+  "district":   {
+    "@name": "Charlottenburg-Wilmersdorf",
+    "period":     {
+      "@begin": "2013-06-15T12:00:00+02:00",
+      "@end": "2013-06-15T19:15:00+02:00",
+      "districtTimestampData":       [
+                {
+          "@value": "2013-06-15T12:00:00+02:00",
+          "usage": "0",
+          "generation": "0",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T12:15:00+02:00",
+          "usage": "221.220667308",
+          "generation": "0.75653",
+          "feed": "84.5536",
+          "key-acount-usage": "30.2634"
+        },
+                {
+          "@value": "2013-06-15T12:30:00+02:00",
+          "usage": "220.817849728",
+          "generation": "0.75653",
+          "feed": "84.3548",
+          "key-acount-usage": "29.6506"
+        },
+                {
+          "@value": "2013-06-15T12:45:00+02:00",
+          "usage": "219.35309132",
+          "generation": "0.75653",
+          "feed": "83.9738",
+          "key-acount-usage": "29.258"
+        },
+                {
+          "@value": "2013-06-15T13:00:00+02:00",
+          "usage": "218.8298337",
+          "generation": "0.74860",
+          "feed": "83.3985",
+          "key-acount-usage": "29.4525"
+        },
+                {
+          "@value": "2013-06-15T13:15:00+02:00",
+          "usage": "217.116018347",
+          "generation": "0.74860",
+          "feed": "82.1109",
+          "key-acount-usage": "28.9679"
+        },
+                {
+          "@value": "2013-06-15T13:30:00+02:00",
+          "usage": "216.734437792",
+          "generation": "0.74860",
+          "feed": "82.1866",
+          "key-acount-usage": "28.9466"
+        },
+                {
+          "@value": "2013-06-15T13:45:00+02:00",
+          "usage": "215.757664777",
+          "generation": "0.74860",
+          "feed": "82.2856",
+          "key-acount-usage": "29.2828"
+        },
+                {
+          "@value": "2013-06-15T14:00:00+02:00",
+          "usage": "215.339351972",
+          "generation": "0.73164",
+          "feed": "82.3422",
+          "key-acount-usage": "29.2417"
+        },
+                {
+          "@value": "2013-06-15T14:15:00+02:00",
+          "usage": "213.426029022",
+          "generation": "0.73164",
+          "feed": "81.8323",
+          "key-acount-usage": "29.0714"
+        },
+                {
+          "@value": "2013-06-15T14:30:00+02:00",
+          "usage": "210.698284105",
+          "generation": "0.73164",
+          "feed": "80.4194",
+          "key-acount-usage": "28.5199"
+        },
+                {
+          "@value": "2013-06-15T14:45:00+02:00",
+          "usage": "209.367419669",
+          "generation": "0.73164",
+          "feed": "79.8616",
+          "key-acount-usage": "28.7207"
+        },
+                {
+          "@value": "2013-06-15T15:00:00+02:00",
+          "usage": "207.73479994",
+          "generation": "0.72942",
+          "feed": "79.894",
+          "key-acount-usage": "28.5013"
+        },
+                {
+          "@value": "2013-06-15T15:15:00+02:00",
+          "usage": "206.734956758",
+          "generation": "0.72942",
+          "feed": "79.5258",
+          "key-acount-usage": "29.0629"
+        },
+                {
+          "@value": "2013-06-15T15:30:00+02:00",
+          "usage": "208.362141801",
+          "generation": "0.72942",
+          "feed": "80.2805",
+          "key-acount-usage": "29.6024"
+        },
+                {
+          "@value": "2013-06-15T15:45:00+02:00",
+          "usage": "207.884348096",
+          "generation": "0.72942",
+          "feed": "79.7682",
+          "key-acount-usage": "29.0492"
+        },
+                {
+          "@value": "2013-06-15T16:00:00+02:00",
+          "usage": "207.240353328",
+          "generation": "0.72414",
+          "feed": "79.6204",
+          "key-acount-usage": "28.3962"
+        },
+                {
+          "@value": "2013-06-15T16:15:00+02:00",
+          "usage": "207.771992868",
+          "generation": "0.72414",
+          "feed": "79.8762",
+          "key-acount-usage": "28.6183"
+        },
+                {
+          "@value": "2013-06-15T16:30:00+02:00",
+          "usage": "207.377599538",
+          "generation": "0.72414",
+          "feed": "79.4689",
+          "key-acount-usage": "28.3922"
+        },
+                {
+          "@value": "2013-06-15T16:45:00+02:00",
+          "usage": "207.74250081",
+          "generation": "0.72414",
+          "feed": "79.7286",
+          "key-acount-usage": "28.557"
+        },
+                {
+          "@value": "2013-06-15T17:00:00+02:00",
+          "usage": "205.943961230",
+          "generation": "0.71635",
+          "feed": "78.8997",
+          "key-acount-usage": "28.5908"
+        },
+                {
+          "@value": "2013-06-15T17:15:00+02:00",
+          "usage": "205.741883748",
+          "generation": "0.71635",
+          "feed": "78.8395",
+          "key-acount-usage": "28.2393"
+        },
+                {
+          "@value": "2013-06-15T17:30:00+02:00",
+          "usage": "205.673234248",
+          "generation": "0.71635",
+          "feed": "78.7321",
+          "key-acount-usage": "28.6423"
+        },
+                {
+          "@value": "2013-06-15T17:45:00+02:00",
+          "usage": "205.922802214",
+          "generation": "0.71635",
+          "feed": "78.8082",
+          "key-acount-usage": "28.3573"
+        },
+                {
+          "@value": "2013-06-15T18:00:00+02:00",
+          "usage": "205.722212318",
+          "generation": "0.72692",
+          "feed": "78.7021",
+          "key-acount-usage": "28.4101"
+        },
+                {
+          "@value": "2013-06-15T18:15:00+02:00",
+          "usage": "206.121418263",
+          "generation": "0.72692",
+          "feed": "78.7887",
+          "key-acount-usage": "28.6137"
+        },
+                {
+          "@value": "2013-06-15T18:30:00+02:00",
+          "usage": "206.24354488",
+          "generation": "0.72692",
+          "feed": "78.7496",
+          "key-acount-usage": "28.8553"
+        },
+                {
+          "@value": "2013-06-15T18:45:00+02:00",
+          "usage": "206.43747259",
+          "generation": "0.72692",
+          "feed": "78.3763",
+          "key-acount-usage": "29.1987"
+        },
+                {
+          "@value": "2013-06-15T19:00:00+02:00",
+          "usage": "205.580195516",
+          "generation": "0.72025",
+          "feed": "77.8128",
+          "key-acount-usage": "28.6747"
+        },
+                {
+          "@value": "2013-06-15T19:15:00+02:00",
+          "usage": "203.532163373",
+          "generation": "0.72025",
+          "feed": "77.1167",
+          "key-acount-usage": "27.287"
+        }
+      ]
+    }
+  }
+},{
+  "scale": "DAY",
+  "district":   {
+    "@name": "Reinickendorf",
+    "period":     {
+      "@begin": "2013-06-15T12:00:00+02:00",
+      "@end": "2013-06-15T19:15:00+02:00",
+      "districtTimestampData":       [
+                {
+          "@value": "2013-06-15T12:00:00+02:00",
+          "usage": "0",
+          "generation": "0",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T12:15:00+02:00",
+          "usage": "111.153081178",
+          "generation": "1.22849",
+          "feed": "0",
+          "key-acount-usage": "4.9888"
+        },
+                {
+          "@value": "2013-06-15T12:30:00+02:00",
+          "usage": "111.034491376",
+          "generation": "1.22849",
+          "feed": "0",
+          "key-acount-usage": "4.9593"
+        },
+                {
+          "@value": "2013-06-15T12:45:00+02:00",
+          "usage": "110.545465248",
+          "generation": "1.22849",
+          "feed": "0",
+          "key-acount-usage": "5.0142"
+        },
+                {
+          "@value": "2013-06-15T13:00:00+02:00",
+          "usage": "109.9775099",
+          "generation": "1.21794",
+          "feed": "0",
+          "key-acount-usage": "5.0302"
+        },
+                {
+          "@value": "2013-06-15T13:15:00+02:00",
+          "usage": "109.255090881",
+          "generation": "1.21794",
+          "feed": "0",
+          "key-acount-usage": "5.1909"
+        },
+                {
+          "@value": "2013-06-15T13:30:00+02:00",
+          "usage": "109.075365376",
+          "generation": "1.21794",
+          "feed": "0",
+          "key-acount-usage": "5.3138"
+        },
+                {
+          "@value": "2013-06-15T13:45:00+02:00",
+          "usage": "108.318102872",
+          "generation": "1.21794",
+          "feed": "0",
+          "key-acount-usage": "5.131"
+        },
+                {
+          "@value": "2013-06-15T14:00:00+02:00",
+          "usage": "107.38953186",
+          "generation": "1.19537",
+          "feed": "0",
+          "key-acount-usage": "5.0982"
+        },
+                {
+          "@value": "2013-06-15T14:15:00+02:00",
+          "usage": "107.097745268",
+          "generation": "1.19537",
+          "feed": "0",
+          "key-acount-usage": "5.1341"
+        },
+                {
+          "@value": "2013-06-15T14:30:00+02:00",
+          "usage": "105.905403910",
+          "generation": "1.19537",
+          "feed": "0",
+          "key-acount-usage": "5.3743"
+        },
+                {
+          "@value": "2013-06-15T14:45:00+02:00",
+          "usage": "103.952722183",
+          "generation": "1.19537",
+          "feed": "0",
+          "key-acount-usage": "5.3566"
+        },
+                {
+          "@value": "2013-06-15T15:00:00+02:00",
+          "usage": "102.5539978",
+          "generation": "1.19241",
+          "feed": "0",
+          "key-acount-usage": "5.041"
+        },
+                {
+          "@value": "2013-06-15T15:15:00+02:00",
+          "usage": "102.493240688",
+          "generation": "1.19241",
+          "feed": "0",
+          "key-acount-usage": "5.3554"
+        },
+                {
+          "@value": "2013-06-15T15:30:00+02:00",
+          "usage": "101.915863052",
+          "generation": "1.19241",
+          "feed": "0",
+          "key-acount-usage": "5.3535"
+        },
+                {
+          "@value": "2013-06-15T15:45:00+02:00",
+          "usage": "102.43807024",
+          "generation": "1.19241",
+          "feed": "0",
+          "key-acount-usage": "5.1469"
+        },
+                {
+          "@value": "2013-06-15T16:00:00+02:00",
+          "usage": "102.027977084",
+          "generation": "1.18538",
+          "feed": "0",
+          "key-acount-usage": "4.8941"
+        },
+                {
+          "@value": "2013-06-15T16:15:00+02:00",
+          "usage": "102.685542508",
+          "generation": "1.18538",
+          "feed": "0",
+          "key-acount-usage": "4.9796"
+        },
+                {
+          "@value": "2013-06-15T16:30:00+02:00",
+          "usage": "102.96373871",
+          "generation": "1.18538",
+          "feed": "0",
+          "key-acount-usage": "4.925"
+        },
+                {
+          "@value": "2013-06-15T16:45:00+02:00",
+          "usage": "102.768048853",
+          "generation": "1.18538",
+          "feed": "0",
+          "key-acount-usage": "4.9714"
+        },
+                {
+          "@value": "2013-06-15T17:00:00+02:00",
+          "usage": "102.117631264",
+          "generation": "1.17502",
+          "feed": "0",
+          "key-acount-usage": "4.87"
+        },
+                {
+          "@value": "2013-06-15T17:15:00+02:00",
+          "usage": "101.615772142",
+          "generation": "1.17502",
+          "feed": "0",
+          "key-acount-usage": "5.1809"
+        },
+                {
+          "@value": "2013-06-15T17:30:00+02:00",
+          "usage": "101.45405732",
+          "generation": "1.17502",
+          "feed": "0",
+          "key-acount-usage": "5.2094"
+        },
+                {
+          "@value": "2013-06-15T17:45:00+02:00",
+          "usage": "100.598095346",
+          "generation": "1.17502",
+          "feed": "0",
+          "key-acount-usage": "4.8569"
+        },
+                {
+          "@value": "2013-06-15T18:00:00+02:00",
+          "usage": "101.344485450",
+          "generation": "1.18908",
+          "feed": "0",
+          "key-acount-usage": "4.8258"
+        },
+                {
+          "@value": "2013-06-15T18:15:00+02:00",
+          "usage": "101.835341924",
+          "generation": "1.18908",
+          "feed": "0",
+          "key-acount-usage": "4.9094"
+        },
+                {
+          "@value": "2013-06-15T18:30:00+02:00",
+          "usage": "101.80500528",
+          "generation": "1.18908",
+          "feed": "0",
+          "key-acount-usage": "4.8213"
+        },
+                {
+          "@value": "2013-06-15T18:45:00+02:00",
+          "usage": "101.924025041",
+          "generation": "1.18908",
+          "feed": "0",
+          "key-acount-usage": "4.8391"
+        },
+                {
+          "@value": "2013-06-15T19:00:00+02:00",
+          "usage": "102.412792964",
+          "generation": "1.18020",
+          "feed": "0",
+          "key-acount-usage": "4.9745"
+        },
+                {
+          "@value": "2013-06-15T19:15:00+02:00",
+          "usage": "101.627945726",
+          "generation": "1.18020",
+          "feed": "0",
+          "key-acount-usage": "5.1147"
+        }
+      ]
+    }
+  }
+},{
+  "scale": "DAY",
+  "district":   {
+    "@name": "Spandau",
+    "period":     {
+      "@begin": "2013-06-15T12:00:00+02:00",
+      "@end": "2013-06-15T19:15:00+02:00",
+      "districtTimestampData":       [
+                {
+          "@value": "2013-06-15T12:00:00+02:00",
+          "usage": "0",
+          "generation": "0",
+          "feed": "0",
+          "key-acount-usage": "0"
+        },
+                {
+          "@value": "2013-06-15T12:15:00+02:00",
+          "usage": "109.192125012",
+          "generation": "70.59282",
+          "feed": "323.4442",
+          "key-acount-usage": "17.928"
+        },
+                {
+          "@value": "2013-06-15T12:30:00+02:00",
+          "usage": "109.354902016",
+          "generation": "74.24542",
+          "feed": "319.3162",
+          "key-acount-usage": "18.0574"
+        },
+                {
+          "@value": "2013-06-15T12:45:00+02:00",
+          "usage": "109.005521048",
+          "generation": "73.02062",
+          "feed": "320.3477",
+          "key-acount-usage": "17.9419"
+        },
+                {
+          "@value": "2013-06-15T13:00:00+02:00",
+          "usage": "108.8428797",
+          "generation": "72.76958",
+          "feed": "321.9239",
+          "key-acount-usage": "17.8051"
+        },
+                {
+          "@value": "2013-06-15T13:15:00+02:00",
+          "usage": "108.671503055",
+          "generation": "73.08148",
+          "feed": "321.1383",
+          "key-acount-usage": "18.0329"
+        },
+                {
+          "@value": "2013-06-15T13:30:00+02:00",
+          "usage": "107.652140564",
+          "generation": "73.68868",
+          "feed": "319.0674",
+          "key-acount-usage": "18.1674"
+        },
+                {
+          "@value": "2013-06-15T13:45:00+02:00",
+          "usage": "106.462253386",
+          "generation": "74.11558",
+          "feed": "315.8558",
+          "key-acount-usage": "18.139"
+        },
+                {
+          "@value": "2013-06-15T14:00:00+02:00",
+          "usage": "106.749067916",
+          "generation": "74.03597",
+          "feed": "314.6033",
+          "key-acount-usage": "18.2986"
+        },
+                {
+          "@value": "2013-06-15T14:15:00+02:00",
+          "usage": "104.660217434",
+          "generation": "74.03797",
+          "feed": "312.1177",
+          "key-acount-usage": "18.3368"
+        },
+                {
+          "@value": "2013-06-15T14:30:00+02:00",
+          "usage": "102.423518055",
+          "generation": "73.91057",
+          "feed": "304.8764",
+          "key-acount-usage": "18.0174"
+        },
+                {
+          "@value": "2013-06-15T14:45:00+02:00",
+          "usage": "102.976452525",
+          "generation": "73.84147",
+          "feed": "305.155",
+          "key-acount-usage": "17.8392"
+        },
+                {
+          "@value": "2013-06-15T15:00:00+02:00",
+          "usage": "102.85613196",
+          "generation": "73.34919",
+          "feed": "304.4916",
+          "key-acount-usage": "17.8599"
+        },
+                {
+          "@value": "2013-06-15T15:15:00+02:00",
+          "usage": "101.32370476",
+          "generation": "73.13429",
+          "feed": "301.1627",
+          "key-acount-usage": "17.5162"
+        },
+                {
+          "@value": "2013-06-15T15:30:00+02:00",
+          "usage": "102.33644962",
+          "generation": "73.61719",
+          "feed": "299.9336",
+          "key-acount-usage": "17.5132"
+        },
+                {
+          "@value": "2013-06-15T15:45:00+02:00",
+          "usage": "102.141775584",
+          "generation": "73.73419",
+          "feed": "296.8623",
+          "key-acount-usage": "17.4414"
+        },
+                {
+          "@value": "2013-06-15T16:00:00+02:00",
+          "usage": "101.211429072",
+          "generation": "73.64810",
+          "feed": "296.152",
+          "key-acount-usage": "17.4633"
+        },
+                {
+          "@value": "2013-06-15T16:15:00+02:00",
+          "usage": "101.296488312",
+          "generation": "73.82940",
+          "feed": "297.3249",
+          "key-acount-usage": "17.5465"
+        },
+                {
+          "@value": "2013-06-15T16:30:00+02:00",
+          "usage": "101.612777669",
+          "generation": "74.02440",
+          "feed": "297.0756",
+          "key-acount-usage": "17.3969"
+        },
+                {
+          "@value": "2013-06-15T16:45:00+02:00",
+          "usage": "100.886441286",
+          "generation": "73.80890",
+          "feed": "296.7114",
+          "key-acount-usage": "17.4549"
+        },
+                {
+          "@value": "2013-06-15T17:00:00+02:00",
+          "usage": "100.831575858",
+          "generation": "73.83472",
+          "feed": "294.3066",
+          "key-acount-usage": "17.3877"
+        },
+                {
+          "@value": "2013-06-15T17:15:00+02:00",
+          "usage": "100.493404830",
+          "generation": "73.77542",
+          "feed": "294.2077",
+          "key-acount-usage": "17.3276"
+        },
+                {
+          "@value": "2013-06-15T17:30:00+02:00",
+          "usage": "100.507417156",
+          "generation": "73.68722",
+          "feed": "291.9746",
+          "key-acount-usage": "17.4514"
+        },
+                {
+          "@value": "2013-06-15T17:45:00+02:00",
+          "usage": "100.201777948",
+          "generation": "73.57272",
+          "feed": "288.6474",
+          "key-acount-usage": "17.5159"
+        },
+                {
+          "@value": "2013-06-15T18:00:00+02:00",
+          "usage": "100.717681792",
+          "generation": "73.50580",
+          "feed": "289.1847",
+          "key-acount-usage": "17.4317"
+        },
+                {
+          "@value": "2013-06-15T18:15:00+02:00",
+          "usage": "100.449391021",
+          "generation": "73.58940",
+          "feed": "287.5638",
+          "key-acount-usage": "17.2891"
+        },
+                {
+          "@value": "2013-06-15T18:30:00+02:00",
+          "usage": "100.14212312",
+          "generation": "73.23290",
+          "feed": "285.9129",
+          "key-acount-usage": "17.4949"
+        },
+                {
+          "@value": "2013-06-15T18:45:00+02:00",
+          "usage": "99.989475934",
+          "generation": "73.28340",
+          "feed": "286.5648",
+          "key-acount-usage": "17.249"
+        },
+                {
+          "@value": "2013-06-15T19:00:00+02:00",
+          "usage": "99.441421248",
+          "generation": "73.74766",
+          "feed": "285.8958",
+          "key-acount-usage": "17.4795"
+        },
+                {
+          "@value": "2013-06-15T19:15:00+02:00",
+          "usage": "99.098026087",
+          "generation": "73.77106",
+          "feed": "283.2219",
+          "key-acount-usage": "17.2054"
+        }
+      ]
+    }
+  }
+}]
