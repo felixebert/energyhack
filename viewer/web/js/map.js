@@ -84,14 +84,18 @@
 				})['Einwohnerzahl'];
 				var valuePerEwz = Math.round((value * 1000 * 1000) / ewz);
 				var timestamp = usageData ? usageData['@value'] : '?';
+				var generation = usageData ? usageData.generation : 0;
+				var feed = usageData ? usageData.feed : 0;
 
 				districts.push({
 					'name': areaKey,
 					'usage': usage,
-					'value': value,
+					'value': valuePerEwz,
 					'usageWKAU': value,
 					'valuePerEwz': valuePerEwz,
 					'ewz': ewz,
+					'generation': generation,
+					'feed': feed,
 					'timestamp': timestamp
 				});
 			}, this));
@@ -113,15 +117,23 @@
 				var layer = this.getAreaLayer(district.name);
 				if (layer) {
 					var style = this.getLayerStyle(district.value, log10Boundary);
+					var html2 = "<strong>" + district.name
+							+ "</strong><br /><br /><table class='table table-condensed table-bordered'><tr><th width='135px'>Zeitpunkt</th><td>"
+							+ district.timestamp + "</td></tr><tr><th>Verbrauch absolut</th><td>" + (Math.round(district.usage * 100) / 100)
+							+ " MW</td></tr><tr><th>Verbrauch abzgl. High Voltage Customers</th><td>" + (Math.round(district.usageWKAU * 100) / 100)
+							+ " MW</td></tr><tr><th>Einwohnerzahl</th><td>" + hdv.formatter.currency(district.ewz)
+							+ "</td></tr><tr><th>Verbrauch / Einwohner</th><td>" + district.valuePerEwz + " Watt</td></tr><tr><th>Erzeugte Energie</th><td>"
+							+ district.generation + " MW</td></tr><tr><th>Zugeführte Energie</th><td>" + district.feed + " MW</td></tr>";
 					var html = "<strong>" + district.name + "</strong><br />Zeitpunkt: " + district.timestamp + "<br />Verbrauch absolut: "
-							+ (Math.round(district.usage * 100) / 100) + " MW<br />Verbrauch abzgl. Industrie: " + (Math.round(district.usageWKAU * 100) / 100)
-							+ " MW<br />Einwohnerzahl: " + hdv.formatter.currency(district.ewz) + "<br /><strong>Verbrauch / Einwohner</strong>: "
-							+ district.valuePerEwz + " Watt";
+							+ (Math.round(district.usage * 100) / 100) + " MW<br />Verbrauch abzgl. High Voltage Customers: "
+							+ (Math.round(district.usageWKAU * 100) / 100) + " MW<br />Einwohnerzahl: " + hdv.formatter.currency(district.ewz)
+							+ "<br /><strong>Verbrauch / Einwohner</strong>: " + district.valuePerEwz + " Watt<br /><br />Erzeugte Energie: "
+							+ district.generation + " MW<br />Zugeführte Energie: " + district.feed + " MW";
 
 					_.each(this.areaLayers, _.bind(function(area) {
 						if (area.key == district.name) {
 							area.value.setStyle(style);
-							area.value.bindPopup(html);
+							area.value.bindPopup(html2);
 						}
 					}, this));
 				} else {
@@ -139,7 +151,7 @@
 			if (value == 0) {
 				return '#888';
 			} else {
-				return '#00C957';
+				return '#ff7800';
 			}
 		},
 		getOpacity: function(value, log10Boundary) {

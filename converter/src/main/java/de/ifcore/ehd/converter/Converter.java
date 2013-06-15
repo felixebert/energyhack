@@ -46,7 +46,7 @@ public class Converter
 		String charset = "UTF-8";
 		String query = "<smeterengine><scale>DAY</scale><city>BERLIN</city><district name='"
 				+ district
-				+ "'><time_period begin=\"2013-06-15 12:00:00\" end=\"2013-06-15 19:29:59\" time_zone='CET'/></district></smeterengine>";
+				+ "'><time_period begin=\"2013-06-15 12:00:00\" end=\"2013-06-15 20:29:59\" time_zone='CET'/></district></smeterengine>";
 
 		URLConnection urlConnection = new URL(url).openConnection();
 		urlConnection.setUseCaches(false);
