@@ -18,6 +18,39 @@ var ehd = {};
 		return (timeValue < 10) ? '0' + timeValue : timeValue;
 	};
 
+	var playControl = L.Control.extend({
+		options: {
+			position: 'topleft'
+		},
+
+		onAdd: function(map) {
+			var playName = 'leaflet-control-time', barName = 'leaflet-bar', partName = barName + '-part', container = L.DomUtil.create('div', playName + ' '
+					+ barName);
+			this._map = map;
+			this._playButton = this._createButton('<i class="icon-play"></i>', 'Play', playName + '-play ' + partName, container, this._play, this);
+
+			return container;
+		},
+
+		_play: function(e) {
+			map.startLoop();
+		},
+
+		_createButton: function(html, title, className, container, fn, context) {
+			var link = L.DomUtil.create('a', className, container);
+			link.innerHTML = html;
+			link.href = '#';
+			link.title = title;
+
+			var stop = L.DomEvent.stopPropagation;
+
+			L.DomEvent.on(link, 'click', stop).on(link, 'mousedown', stop).on(link, 'dblclick', stop).on(link, 'click', L.DomEvent.preventDefault).on(link,
+					'click', fn, context);
+
+			return link;
+		}
+	});
+
 	var map = {
 		areaLayers: [],
 		data: [],
@@ -85,8 +118,10 @@ var ehd = {};
 				'maxZoom': 18
 			}).addTo(this.leafletMap);
 
+			new playControl().addTo(this.leafletMap);
+
 			$(ehd).on('map.loaded.areaLayers map.loaded.data', _.bind(this.fireMapIsReady, this));
-			$(ehd).on('map.ready', _.bind(this.startLoop, this));
+			$(ehd).on('map.ready', _.bind(this.renderLast, this));
 
 			this.loadAreaLayers();
 			this.loadData();
