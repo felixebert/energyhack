@@ -1,2 +1,4 @@
 energyhack
 ==========
+
+License: MIT
