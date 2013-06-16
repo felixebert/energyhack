@@ -63,6 +63,7 @@ var ehd = {};
 		areaLayers: [],
 		data: [],
 		loopUsageData: [],
+		loopBoundary: [],
 		settings: {},
 		districts: [{
 			"name": "Mitte",
@@ -142,16 +143,40 @@ var ehd = {};
 			this.settings = toLiteral($('.settings').serializeArray());
 			if (this.loopUsageData.length <= 1) {
 				this.renderLast();
+			} else {
+				this.setLoopBoundary();
 			}
 		},
 		renderLast: function() {
 			var districtData = this.getDistrictData(this.lastUsageDataFilter);
-			this.colorLayers(districtData);
+			var log10Boundary = this.getLog10Boundary(districtData);
+			this.colorLayers(districtData, log10Boundary);
 		},
 		startLoop: function() {
 			var exampleDistrict = _.first(this.data);
 			this.loopUsageData = this.filterOutEmptyData(exampleDistrict.results);
+
+			this.setLoopBoundary();
 			this.loop();
+		},
+		setLoopBoundary: function() {
+			var boundary = [0, 100000];
+			_.each(this.loopUsageData, _.bind(function(usageData) {
+				var filter = function(usageDataArray) {
+					return _.find(usageDataArray, function(usageDataEntry) {
+						return usageDataEntry.timestamp === usageData.timestamp;
+					});
+				};
+				var districtData = this.getDistrictData(filter);
+				var log10Boundary = this.getLog10Boundary(districtData);
+				if (log10Boundary[0] > boundary[0]) {
+					boundary[0] = log10Boundary[0];
+				}
+				if (log10Boundary[1] < boundary[1]) {
+					boundary[1] = log10Boundary[1];
+				}
+			}, this));
+			this.loopBoundary = boundary;
 		},
 		loop: function() {
 			if (this.loopUsageData.length > 0) {
@@ -164,9 +189,9 @@ var ehd = {};
 					});
 				};
 				var districtData = this.getDistrictData(filter);
-				this.colorLayers(districtData);
+				this.colorLayers(districtData, this.loopBoundary);
 
-				window.setTimeout(_.bind(this.loop, this), 1000);
+				window.setTimeout(_.bind(this.loop, this), 750);
 			}
 		},
 		lastUsageDataFilter: function(usageDataArray) {
@@ -195,6 +220,7 @@ var ehd = {};
 					'ewz': ewz,
 					'usageData': usageData,
 					'comparisonValue': comparisonValue,
+					'comparisonValueUnit': this.settings.relation === 'population' ? 'W' : 'MW',
 					'usageByPopulation': usageByPopulation
 				});
 			}, this));
@@ -212,7 +238,7 @@ var ehd = {};
 				return result.usage > 0;
 			});
 		},
-		colorLayers: function(districts) {
+		getLog10Boundary: function(districts) {
 			var max = 0;
 			var min = 100000;
 			_.each(districts, _.bind(function(district) {
@@ -224,7 +250,9 @@ var ehd = {};
 				}
 			}, this));
 			var log10Boundary = [safeLog10(max), safeLog10(min)];
-
+			return log10Boundary;
+		},
+		colorLayers: function(districts, log10Boundary) {
 			_.each(districts, _.bind(function(district) {
 				var layer = this.getAreaLayer(district.name);
 				if (layer) {
@@ -241,7 +269,8 @@ var ehd = {};
 							+ (Math.round((district.usageData.usage - district.usageData['key-acount-usage']) * 100) / 100) + " MW</td></tr>";
 					html += "<tr><th>Einwohnerzahl</th><td>" + formatNumber(district.ewz) + "</td></tr>";
 					html += "<tr><th>Verbrauch / Einwohner</th><td>" + district.usageByPopulation + " Watt</td></tr>";
-					html += "</table><em>maßgebender Wert für die Einfärbung des Bezirks: " + Math.round(district.comparisonValue * 100) / 100 + "</em>";
+					html += "</table><em>maßgebender Wert für die Einfärbung: " + Math.round(district.comparisonValue * 100) / 100 + " "
+							+ district.comparisonValueUnit + "</em>";
 
 					_.each(this.areaLayers, _.bind(function(area) {
 						if (area.key === district.name) {
