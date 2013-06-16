@@ -301,7 +301,7 @@ var ehd = {};
 				return 0.25;
 			}
 			var opacity = Math.round(0.75 * this.getOpacityFactor(value, log10Boundary) * 100) / 100;
-			return Math.max(0.2, opacity);
+			return Math.max(0.1, opacity);
 		},
 		getOpacityFactor: function(value, log10Boundary) {
 			return Math.round((safeLog10(value) - log10Boundary[1]) / (log10Boundary[0] - log10Boundary[1]) * 100) / 100;
