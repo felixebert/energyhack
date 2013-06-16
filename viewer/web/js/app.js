@@ -14,9 +14,14 @@ var ehd = {};
 		return negative + (thousands ? absNumber.substr(0, thousands) + thousand : "") + absNumber.substr(thousands).replace(/(\d{3})(?=\d)/g, "$1" + thousand);
 	};
 
+	var fillTime = function(timeValue) {
+		return (timeValue < 10) ? '0' + timeValue : timeValue;
+	};
+
 	var map = {
 		areaLayers: [],
-		data: {},
+		data: [],
+		loopUsageData: [],
 		districts: [{
 			"name": "Mitte",
 			"nameForNetUsageApi": "Mitte",
@@ -81,10 +86,61 @@ var ehd = {};
 			}).addTo(this.leafletMap);
 
 			$(ehd).on('map.loaded.areaLayers map.loaded.data', _.bind(this.fireMapIsReady, this));
-			$(ehd).on('map.ready', _.bind(this.colorLayers, this));
+			$(ehd).on('map.ready', _.bind(this.startLoop, this));
 
 			this.loadAreaLayers();
 			this.loadData();
+		},
+		renderLast: function() {
+			var districtData = this.getDistrictData(this.lastUsageDataFilter);
+			this.colorLayers(districtData);
+		},
+		startLoop: function() {
+			var exampleDistrict = _.first(this.data);
+			this.loopUsageData = this.filterOutEmptyData(exampleDistrict.results);
+			this.loop();
+		},
+		loop: function() {
+			if (this.loopUsageData.length > 0) {
+				var usageData = _.first(this.loopUsageData);
+				this.loopUsageData.splice(0, 1);
+
+				var filter = function(usageDataArray) {
+					return _.find(usageDataArray, function(usageDataEntry) {
+						return usageDataEntry.timestamp === usageData.timestamp;
+					});
+				};
+				var districtData = this.getDistrictData(filter);
+				this.colorLayers(districtData);
+
+				window.setTimeout(_.bind(this.loop, this), 1000);
+			}
+		},
+		lastUsageDataFilter: function(usageDataArray) {
+			return _.last(usageDataArray);
+		},
+		getDistrictData: function(usageDataFilter) {
+			var districts = [];
+
+			_.each(this.data, _.bind(function(districtData) {
+				var district = this.findDistrictByNetUsageApiName(districtData.district);
+				var filteredUsageDataArray = this.filterOutEmptyData(districtData.results);
+				var usageData = usageDataFilter(filteredUsageDataArray);
+
+				var value = usageData.usage - usageData['key-acount-usage'];
+				var ewz = district.ewz;
+				var valuePerEwz = Math.round((value * 1000 * 1000) / ewz);
+
+				districts.push({
+					'name': district.name,
+					'ewz': ewz,
+					'usageData': usageData,
+					'comparisonValue': valuePerEwz,
+					'valuePerEwz': valuePerEwz
+				});
+			}, this));
+
+			return districts;
 		},
 		findDistrictByNetUsageApiName: function(districtName) {
 			var district = _.find(this.districts, function(districtEntry) {
@@ -97,28 +153,7 @@ var ehd = {};
 				return result.usage > 0;
 			});
 		},
-		colorLayers: function() {
-			var districts = [];
-
-			_.each(this.data, _.bind(function(districtData) {
-				var district = this.findDistrictByNetUsageApiName(districtData.district);
-
-				var usageData = this.filterOutEmptyData(districtData.results);
-				var lastUsageData = _.last(usageData);
-
-				var value = lastUsageData.usage - lastUsageData['key-acount-usage'];
-				var ewz = district.ewz;
-				var valuePerEwz = Math.round((value * 1000 * 1000) / ewz);
-
-				districts.push({
-					'name': district.name,
-					'ewz': ewz,
-					'lastUsageData': lastUsageData,
-					'comparisonValue': valuePerEwz,
-					'valuePerEwz': valuePerEwz,
-				});
-			}, this));
-
+		colorLayers: function(districts) {
 			var max = 0;
 			var min = 100000;
 			_.each(districts, _.bind(function(district) {
@@ -135,15 +170,16 @@ var ehd = {};
 				var layer = this.getAreaLayer(district.name);
 				if (layer) {
 					var style = this.getLayerStyle(district.comparisonValue, log10Boundary);
-					var date = new Date(district.lastUsageData.timestamp);
+					var date = new Date(district.usageData.timestamp);
 					var html = "Bezirk: <strong>" + district.name + "</strong><br /><br />";
 					html += "<table class='table table-condensed table-bordered'>";
-					html += "<tr><th style='width:160px'>Zeitpunkt</th><td style='width:70px'>" + date.getHours() + ":" + date.getMinutes() + "</td></tr>";
-					html += "<tr><th>Erzeugte Energie</th><td>" + (Math.round(district.lastUsageData.generation * 100) / 100) + " MW</td></tr>";
-					html += "<tr><th>Verbrauch absolut</th><td>" + (Math.round(district.lastUsageData.usage * 100) / 100) + " MW</td></tr>";
-					html += "<tr><th>High Voltage Customers</th><td>" + (Math.round(district.lastUsageData['key-acount-usage'] * 100) / 100) + " MW</td></tr>";
+					html += "<tr><th style='width:160px'>Zeitpunkt</th><td style='width:70px'>" + fillTime(date.getHours()) + ":" + fillTime(date.getMinutes())
+							+ "</td></tr>";
+					html += "<tr><th>Erzeugte Energie</th><td>" + (Math.round(district.usageData.generation * 100) / 100) + " MW</td></tr>";
+					html += "<tr><th>Verbrauch absolut</th><td>" + (Math.round(district.usageData.usage * 100) / 100) + " MW</td></tr>";
+					html += "<tr><th>High Voltage Customers</th><td>" + (Math.round(district.usageData['key-acount-usage'] * 100) / 100) + " MW</td></tr>";
 					html += "<tr><th>Verbrauch abzgl. HVC</th><td>"
-							+ (Math.round((district.lastUsageData.usage - district.lastUsageData['key-acount-usage']) * 100) / 100) + " MW</td></tr>";
+							+ (Math.round((district.usageData.usage - district.usageData['key-acount-usage']) * 100) / 100) + " MW</td></tr>";
 					html += "<tr><th>Einwohnerzahl</th><td>" + formatNumber(district.ewz) + "</td></tr>";
 					html += "<tr><th>Verbrauch / Einwohner*</th><td>" + district.valuePerEwz + " Watt</td></tr>";
 					html += "</table><em>* maßgebend für die Einfärbung des Bezirks</em>";
@@ -184,8 +220,8 @@ var ehd = {};
 		},
 		fireMapIsReady: function() {
 			if (!_.isEmpty(this.data) && !_.isEmpty(this.areaLayers)) {
-				$(ehd).triggerHandler('map.ready');
 				$('#loading').remove();
+				$(ehd).triggerHandler('map.ready');
 			}
 		},
 		loadAreaLayers: function() {
