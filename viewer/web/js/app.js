@@ -18,6 +18,14 @@ var ehd = {};
 		return (timeValue < 10) ? '0' + timeValue : timeValue;
 	};
 
+	var toLiteral = function(array) {
+		var literal = {};
+		_.each(array, function(element) {
+			literal[element.name] = element.value;
+		});
+		return literal;
+	};
+
 	var playControl = L.Control.extend({
 		options: {
 			position: 'topleft'
@@ -55,6 +63,7 @@ var ehd = {};
 		areaLayers: [],
 		data: [],
 		loopUsageData: [],
+		settings: {},
 		districts: [{
 			"name": "Mitte",
 			"nameForNetUsageApi": "Mitte",
@@ -112,7 +121,7 @@ var ehd = {};
 				maxZoom: 13
 			});
 
-			var attribution = 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>, Ortsteil-Geometrien: <a href="https://www.statistik-berlin-brandenburg.de/produkte/opendata/geometrienOD.asp?Kat=6301">Amt für Statistik Berlin-Brandenburg</a> - API: <a href="https://github.com/stefanw/smeterengine-json">stefanw/smeterengine-json</a> - Created by: Michael Hörz, Felix Ebert at <a href="http://energyhack.de">Energy Hackday Berlin</a> - GitHub: <a href="https://github.com/felixebert/energyhack">felixebert/energyhack</a>';
+			var attribution = 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>, Ortsteil-Geometrien: <a href="https://www.statistik-berlin-brandenburg.de/produkte/opendata/geometrienOD.asp?Kat=6301">Amt für Statistik Berlin-Brandenburg</a> - API: <a href="https://github.com/stefanw/smeterengine-json">stefanw/smeterengine-json</a> - Created by: <a href="http://www.michael-hoerz.de/">Michael Hörz</a>, Felix Ebert at <a href="http://energyhack.de">Energy Hackday Berlin</a> - GitHub: <a href="https://github.com/felixebert/energyhack">felixebert/energyhack</a>';
 			L.tileLayer('http://{s}.tile.cloudmade.com/036a729cf53d4388a8ec345e1543ef53/44094/256/{z}/{x}/{y}.png', {
 				'attribution': attribution,
 				'maxZoom': 18
@@ -123,8 +132,17 @@ var ehd = {};
 			$(ehd).on('map.loaded.areaLayers map.loaded.data', _.bind(this.fireMapIsReady, this));
 			$(ehd).on('map.ready', _.bind(this.renderLast, this));
 
+			$('.settings').on('change', _.bind(this.onSettingsChange, this));
+			this.settings = toLiteral($('.settings').serializeArray());
+
 			this.loadAreaLayers();
 			this.loadData();
+		},
+		onSettingsChange: function() {
+			this.settings = toLiteral($('.settings').serializeArray());
+			if (this.loopUsageData.length <= 1) {
+				this.renderLast();
+			}
 		},
 		renderLast: function() {
 			var districtData = this.getDistrictData(this.lastUsageDataFilter);
@@ -161,17 +179,23 @@ var ehd = {};
 				var district = this.findDistrictByNetUsageApiName(districtData.district);
 				var filteredUsageDataArray = this.filterOutEmptyData(districtData.results);
 				var usageData = usageDataFilter(filteredUsageDataArray);
+				usageData.hvc = Math.max(0, usageData['key-acount-usage']);
+				usageData.usageWithoutHvc = usageData.usage - usageData.hvc;
 
-				var value = usageData.usage - usageData['key-acount-usage'];
 				var ewz = district.ewz;
-				var valuePerEwz = Math.round((value * 1000 * 1000) / ewz);
+				var usageByPopulation = Math.round((usageData.usageWithoutHvc * 1000 * 1000) / ewz);
+
+				var comparisonValue = usageData[this.settings.compare];
+				if (this.settings.relation === 'population') {
+					comparisonValue = Math.round((comparisonValue * 1000 * 1000) / ewz);
+				}
 
 				districts.push({
 					'name': district.name,
 					'ewz': ewz,
 					'usageData': usageData,
-					'comparisonValue': valuePerEwz,
-					'valuePerEwz': valuePerEwz
+					'comparisonValue': comparisonValue,
+					'usageByPopulation': usageByPopulation
 				});
 			}, this));
 
@@ -216,8 +240,8 @@ var ehd = {};
 					html += "<tr><th>Verbrauch abzgl. HVC</th><td>"
 							+ (Math.round((district.usageData.usage - district.usageData['key-acount-usage']) * 100) / 100) + " MW</td></tr>";
 					html += "<tr><th>Einwohnerzahl</th><td>" + formatNumber(district.ewz) + "</td></tr>";
-					html += "<tr><th>Verbrauch / Einwohner*</th><td>" + district.valuePerEwz + " Watt</td></tr>";
-					html += "</table><em>* maßgebend für die Einfärbung des Bezirks</em>";
+					html += "<tr><th>Verbrauch / Einwohner</th><td>" + district.usageByPopulation + " Watt</td></tr>";
+					html += "</table><em>maßgebender Wert für die Einfärbung des Bezirks: " + Math.round(district.comparisonValue * 100) / 100 + "</em>";
 
 					_.each(this.areaLayers, _.bind(function(area) {
 						if (area.key === district.name) {
@@ -240,7 +264,7 @@ var ehd = {};
 			if (value == 0) {
 				return '#888';
 			} else {
-				return '#FF0000';
+				return this.settings.compare === 'generation' ? '#00C957' : '#FF0000';
 			}
 		},
 		getOpacity: function(value, log10Boundary) {

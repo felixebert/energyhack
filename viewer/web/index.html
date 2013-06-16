@@ -13,6 +13,24 @@
 	<div id="map"></div>
 	<div id="loading"></div>
 	
+	<div id="nav">
+		<form class="nav-container settings form-inline" method="GET" action="index.html">
+			<label class="title">Was vergleichen?</label>
+			<p>
+				<label class="radio"><input type="radio" name="compare" value="usage"> Verbrauch</label>
+				<label class="radio"><input type="radio" name="compare" value="usageWithoutHvc" checked="checked"> Verbrauch abzgl. HVC</label>
+				<label class="radio"><input type="radio" name="compare" value="hvc"> High Voltage Customers</label>
+				<label class="radio"><input type="radio" name="compare" value="generation"> Erzeugung</label>
+			</p>
+			
+			<label class="title">im Verhältnis zur?</label>
+			<p>
+				<label class="radio"><input type="radio" name="relation" value="population" checked="checked"> Einwohnerzahl</label>
+				<label class="radio"><input type="radio" name="relation" value="none"> absolut</label>
+			</p>
+		</form>
+	</div>
+	
 	<script src="lib/underscore.js"></script>
 	<script src="lib/leaflet.js"></script>
 	<script src="lib/jquery.js"></script>
