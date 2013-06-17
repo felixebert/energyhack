@@ -317,7 +317,7 @@ var ehd = {};
 			if (value === 0) {
 				return 0.25;
 			}
-			var opacity = Math.round(0.75 * this.getOpacityFactor(value, log10Boundary) * 100) / 100;
+			var opacity = Math.round(0.9 * this.getOpacityFactor(value, log10Boundary) * 100) / 100;
 			return Math.max(0.1, opacity);
 		},
 		getOpacityFactor: function(value, log10Boundary) {
