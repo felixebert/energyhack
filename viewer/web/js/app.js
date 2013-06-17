@@ -118,8 +118,8 @@ var ehd = {};
 			this.leafletMap = L.map('map', {
 				center: [52.51628011262304, 13.37771496361961],
 				zoom: 11,
-				minZoom: 8,
-				maxZoom: 13
+				minZoom: 10,
+				maxZoom: 14
 			});
 
 			var attribution = 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>, Ortsteil-Geometrien: <a href="https://www.statistik-berlin-brandenburg.de/produkte/opendata/geometrienOD.asp?Kat=6301">Amt für Statistik Berlin-Brandenburg</a> - API: <a href="https://github.com/stefanw/smeterengine-json">stefanw/smeterengine-json</a> - Created by: <a href="http://www.michael-hoerz.de/">Michael Hörz</a>, Felix Ebert at <a href="http://energyhack.de">Energy Hackday Berlin</a> - GitHub: <a href="https://github.com/felixebert/energyhack">felixebert/energyhack</a>';
@@ -313,7 +313,7 @@ var ehd = {};
 			}
 		},
 		loadAreaLayers: function() {
-			$.getJSON('data/Berlin-Ortsteile.geojson', _.bind(function(data) {
+			$.getJSON('data/Berlin-Bezirke.geojson', _.bind(function(data) {
 				this.addAreaLayers(data);
 				$(ehd).triggerHandler('map.loaded.areaLayers');
 			}, this));
@@ -328,18 +328,11 @@ var ehd = {};
 			}).addTo(this.leafletMap);
 		},
 		addAreaLayer: function(feature, layer) {
-			var key = this.extractKey(feature.properties.Description);
 			this.areaLayers.push({
-				'key': key,
+				'key': feature.properties.Name,
 				'label': feature.properties.Name,
 				'value': layer
 			});
-		},
-		extractKey: function(description) {
-			var startPos = description.indexOf('BEZNAME');
-			var substr = description.substr(startPos + 17, 100);
-			var key = substr.substr(0, substr.indexOf('<'));
-			return key;
 		},
 		getAreaLayer: function(key) {
 			return _.find(this.areaLayers, function(area) {
