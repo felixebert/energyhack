@@ -32,11 +32,17 @@ var ehd = {};
 		},
 
 		onAdd: function(map) {
-			var playName = 'leaflet-control-time', barName = 'leaflet-bar', partName = barName + '-part', container = L.DomUtil.create('div', playName + ' '
-					+ barName);
-			this._map = map;
-			this._playButton = this._createButton('<i class="icon-play"></i>', 'Play', playName + '-play ' + partName, container, this._play, this);
+			var playName = 'leaflet-control-time';
+			var barName = 'leaflet-bar';
+			var partName = barName + '-part';
 
+			var container = L.DomUtil.create('div', playName);
+			var buttonContainer = L.DomUtil.create('div', barName, container);
+
+			this._map = map;
+			this._playButton = this._createButton('<i class="icon-play"></i>', 'Play', playName + '-play ' + partName, buttonContainer, this._play, this);
+
+			L.DomUtil.create('span', 'time', container);
 			return container;
 		},
 
@@ -122,7 +128,7 @@ var ehd = {};
 				maxZoom: 14
 			});
 
-			var attribution = 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>, Ortsteil-Geometrien: <a href="https://www.statistik-berlin-brandenburg.de/produkte/opendata/geometrienOD.asp?Kat=6301">Amt für Statistik Berlin-Brandenburg</a> - API: <a href="https://github.com/stefanw/smeterengine-json">stefanw/smeterengine-json</a> - Created by: <a href="http://www.michael-hoerz.de/">Michael Hörz</a>, Felix Ebert at <a href="http://energyhack.de">Energy Hackday Berlin</a> - GitHub: <a href="https://github.com/felixebert/energyhack">felixebert/energyhack</a>';
+			var attribution = 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>, Ortsteil-Geometrien: <a href="https://www.statistik-berlin-brandenburg.de/produkte/opendata/geometrienOD.asp?Kat=6301">Amt für Statistik Berlin-Brandenburg</a> &amp; <a href="https://github.com/m-hoerz/berlin-shapes">m-hoerz/berlin-shapes</a> - Energiedaten: <a href="http://netzdaten-berlin.de/web/guest/suchen/-/details/web-service-last-und-erzeugung-berlin">Stromnetz Berlin</a> - API: <a href="https://github.com/stefanw/smeterengine-json">stefanw/smeterengine-json</a> - Created by: <a href="http://www.michael-hoerz.de/">Michael Hörz</a>, Felix Ebert at <a href="http://energyhack.de">Energy Hackday Berlin</a> - GitHub: <a href="https://github.com/felixebert/energyhack">felixebert/energyhack</a>';
 			L.tileLayer('http://{s}.tile.cloudmade.com/036a729cf53d4388a8ec345e1543ef53/44094/256/{z}/{x}/{y}.png', {
 				'attribution': attribution,
 				'maxZoom': 18
@@ -151,13 +157,23 @@ var ehd = {};
 			var districtData = this.getDistrictData(this.lastUsageDataFilter);
 			var log10Boundary = this.getLog10Boundary(districtData);
 			this.colorLayers(districtData, log10Boundary);
+			this.showTimeOf(_.first(districtData));
+		},
+		showTimeOf: function(district) {
+			var date = new Date(district.usageData.timestamp);
+			var time = fillTime(date.getHours()) + ":" + fillTime(date.getMinutes());
+			$('.time').text(time);
 		},
 		startLoop: function() {
 			var exampleDistrict = _.first(this.data);
-			this.loopUsageData = this.filterOutEmptyData(exampleDistrict.results);
+			var startLoop = this.loopUsageData.length < 1;
 
+			this.loopUsageData = this.filterOutEmptyData(exampleDistrict.results);
 			this.setLoopBoundary();
-			this.loop();
+
+			if (startLoop) {
+				this.loop();
+			}
 		},
 		setLoopBoundary: function() {
 			var boundary = [0, 100000];
@@ -191,6 +207,7 @@ var ehd = {};
 				var districtData = this.getDistrictData(filter);
 				this.colorLayers(districtData, this.loopBoundary);
 
+				this.showTimeOf(_.first(districtData));
 				window.setTimeout(_.bind(this.loop, this), 750);
 			}
 		},

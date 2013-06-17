@@ -111,3 +111,10 @@ label.title {
 	text-decoration: none;
 	color: black;
 }
+.leaflet-control-time .leaflet-bar {
+	float: left;
+	clear: left;
+}
+.time {
+	display: block;
+}
