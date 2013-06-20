@@ -277,8 +277,8 @@ var ehd = {};
 					var date = new Date(district.usageData.timestamp);
 					var html = "Bezirk: <strong>" + district.name + "</strong><br /><br />";
 					html += "<table class='table table-condensed table-bordered'>";
-					html += "<tr><th style='width:160px'>Zeitpunkt</th><td style='width:70px'>" + fillTime(date.getHours()) + ":" + fillTime(date.getMinutes())
-							+ "</td></tr>";
+					html += "<tr><th style='width:160px'>Zeitpunkt</th><td style='width:70px'>" + fillTime(date.getDate()) + '.'
+							+ fillTime(date.getMonth() + 1) + '.2013 ' + fillTime(date.getHours()) + ":" + fillTime(date.getMinutes()) + "</td></tr>";
 					html += "<tr><th>Erzeugte Energie</th><td>" + (Math.round(district.usageData.generation * 100) / 100) + " MW</td></tr>";
 					html += "<tr><th>Verbrauch absolut</th><td>" + (Math.round(district.usageData.usage * 100) / 100) + " MW</td></tr>";
 					html += "<tr><th>High Voltage Customers</th><td>" + (Math.round(district.usageData['key-acount-usage'] * 100) / 100) + " MW</td></tr>";
@@ -367,11 +367,28 @@ var ehd = {};
 			var params = {
 				district: this.getDistrictNamesForNetUsageApi()
 			};
+
 			var url = 'http://pure-headland-2592.herokuapp.com/?' + $.param(params, true);
-			$.getJSON(url, _.bind(function(data) {
+			var errorOccured = false;
+			var handleData = function(data) {
 				this.data = data;
-				$(ehd).triggerHandler('map.loaded.data');
-			}, this));
+
+				var someDistrict = _.first(this.data);
+				var filledData = this.filterOutEmptyData(someDistrict.results);
+				if (filledData.length < 1) {
+					var warning = 'Die API von Stromnetz Berlin liefert aktuell leider keine Livedaten. Ich habe Stromnetz Berlin bereits kontaktiert - bis zur Behebung des Fehlers werden Daten von Dienstag, den 18. Juni 2013, angezeigt.';
+					alert(warning);
+
+					if (!errorOccured) {
+						errorOccured = true;
+						url += '&begin=2013-06-18%2000:00:00&end=2013-06-18%2023:59:59';
+						$.getJSON(url, _.bind(handleData, this));
+					}
+				} else {
+					$(ehd).triggerHandler('map.loaded.data');
+				}
+			};
+			$.getJSON(url, _.bind(handleData, this));
 		}
 	};
 
