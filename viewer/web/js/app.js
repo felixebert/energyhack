@@ -26,6 +26,11 @@ var ehd = {};
 		return literal;
 	};
 
+	var colors = {
+		red: ["#fee0d2", "#fcbba1", "#fc9272", "#fb6a4a", "#ef3b2c", "#cb181d", "#a50f15", "#67000d"],
+		green: ["#e5f5e0", "#c7e9c0", "#a1d99b", "#74c476", "#41ab5d", "#238b45", "#006d2c", "#00441b"]
+	};
+
 	var playControl = L.Control.extend({
 		options: {
 			position: 'topleft'
@@ -302,25 +307,31 @@ var ehd = {};
 		},
 		getLayerStyle: function(value, log10Boundary) {
 			return {
-				'fillOpacity': this.getOpacity(value, log10Boundary),
-				'fillColor': this.getFillColor(value)
+				'fillOpacity': 0.65,
+				'fillColor': this.getFillColor(value, log10Boundary)
 			};
 		},
-		getFillColor: function(value, compare) {
+		getFillColor: function(value, log10Boundary) {
 			if (value == 0) {
-				return '#888';
-			} else {
-				return this.settings.compare === 'generation' ? '#00C957' : '#FF0000';
+				return '#EEE';
 			}
+
+			var colorScheme = (value <= 0 || this.settings.compare === 'generation') ? colors.green : colors.red;
+			var factor = this.getComparisonFactor(value, log10Boundary);
+			var colorIndex = Math.max(0, Math.round((colorScheme.length - 1) * factor));
+			return colorScheme[colorIndex];
 		},
 		getOpacity: function(value, log10Boundary) {
 			if (value === 0) {
 				return 0.25;
 			}
-			var opacity = Math.round(0.9 * this.getOpacityFactor(value, log10Boundary) * 100) / 100;
-			return Math.max(0.1, opacity);
+			var opacity = Math.round(0.75 * this.getComparisonFactor(value, log10Boundary) * 100) / 100;
+			return Math.max(0.2, opacity);
 		},
-		getOpacityFactor: function(value, log10Boundary) {
+		getComparisonFactor: function(value, log10Boundary) {
+			if (log10Boundary[0] === log10Boundary[1]) {
+				return 1;
+			}
 			return Math.round((safeLog10(value) - log10Boundary[1]) / (log10Boundary[0] - log10Boundary[1]) * 100) / 100;
 		},
 		fireMapIsReady: function() {
@@ -376,7 +387,7 @@ var ehd = {};
 				var someDistrict = _.first(this.data);
 				var filledData = this.filterOutEmptyData(someDistrict.results);
 				if (filledData.length < 1) {
-					var warning = 'Die API von Stromnetz Berlin liefert aktuell leider keine Livedaten. Ich habe Stromnetz Berlin bereits kontaktiert - bis zur Behebung des Fehlers werden Daten von Dienstag, den 18. Juni 2013, angezeigt.';
+					var warning = 'Die API von Stromnetz Berlin liefert aktuell leider keine Livedaten. - bis zur Behebung des Fehlers werden Daten von Dienstag, den 18. Juni 2013, angezeigt.';
 					alert(warning);
 
 					if (!errorOccured) {
