@@ -1,7 +1,7 @@
 'use strict';
 
 var ehd = {};
-(function(ehd, L, $, _) {
+(function(ehd, L, $, _, Modernizr) {
 	var safeLog10 = function(number) {
 		return number === 0 ? 0 : Math.log(Math.abs(number)) / Math.LN10;
 	};
@@ -126,6 +126,12 @@ var ehd = {};
 			"ewz": 247887
 		}],
 		init: function() {
+			if (!Modernizr.svg || !Modernizr.cors) {
+				alert('Diese Visualisierung nutzt Techniken, die von Ihrem aktuellen Browser nicht unterstützt werden. Bitte aktualisieren Sie Ihren Browser! Für Internet Explorer Nutzer: Es ist mindestens Version 10 erforderlich.');
+				$('#loading').remove();
+				return false;
+			}
+
 			this.leafletMap = L.map('map', {
 				center: [52.51628011262304, 13.37771496361961],
 				zoom: 11,
@@ -404,4 +410,4 @@ var ehd = {};
 	};
 
 	ehd.map = map;
-})(ehd, L, $, _);
+})(ehd, L, $, _, Modernizr);
