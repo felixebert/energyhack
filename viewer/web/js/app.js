@@ -211,9 +211,10 @@ var ehd = {};
 				this.loopUsageData.splice(0, 1);
 
 				var filter = function(usageDataArray) {
-					return _.find(usageDataArray, function(usageDataEntry) {
+					var value = _.find(usageDataArray, function(usageDataEntry) {
 						return usageDataEntry.timestamp === usageData.timestamp;
 					});
+					return value === null ? {} : value;
 				};
 				var districtData = this.getDistrictData(filter);
 				this.colorLayers(districtData, this.loopBoundary);
@@ -232,7 +233,7 @@ var ehd = {};
 				var district = this.findDistrictByNetUsageApiName(districtData.district);
 				var filteredUsageDataArray = this.filterOutEmptyData(districtData.results);
 				var usageData = usageDataFilter(filteredUsageDataArray);
-				usageData.hvc = Math.max(0, usageData['key-account-usage']);
+				usageData.hvc = Math.max(0, usageData['key-acount-usage']);
 				usageData.usageWithoutHvc = usageData.usage - usageData.hvc;
 
 				var ewz = district.ewz;
@@ -292,9 +293,9 @@ var ehd = {};
 							+ fillTime(date.getMonth() + 1) + '.2013 ' + fillTime(date.getHours()) + ":" + fillTime(date.getMinutes()) + "</td></tr>";
 					html += "<tr><th>Erzeugte Energie</th><td>" + (Math.round(district.usageData.generation * 100) / 100) + " MW</td></tr>";
 					html += "<tr><th>Verbrauch absolut</th><td>" + (Math.round(district.usageData.usage * 100) / 100) + " MW</td></tr>";
-					html += "<tr><th>High Voltage Customers</th><td>" + (Math.round(district.usageData['key-account-usage'] * 100) / 100) + " MW</td></tr>";
+					html += "<tr><th>High Voltage Customers</th><td>" + (Math.round(district.usageData['key-acount-usage'] * 100) / 100) + " MW</td></tr>";
 					html += "<tr><th>Verbrauch abzgl. HVC</th><td>"
-							+ (Math.round((district.usageData.usage - district.usageData['key-account-usage']) * 100) / 100) + " MW</td></tr>";
+							+ (Math.round((district.usageData.usage - district.usageData['key-acount-usage']) * 100) / 100) + " MW</td></tr>";
 					html += "<tr><th>Einwohnerzahl</th><td>" + formatNumber(district.ewz) + "</td></tr>";
 					html += "<tr><th>Verbrauch / Einwohner</th><td>" + district.usageByPopulation + " Watt</td></tr>";
 					html += "</table><em>maßgebender Wert für die Einfärbung: " + Math.round(district.comparisonValue * 100) / 100 + " "
