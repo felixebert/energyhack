@@ -139,8 +139,8 @@ var ehd = {};
 				maxZoom: 14
 			});
 
-			var attribution = 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>, Ortsteil-Geometrien: <a href="https://www.statistik-berlin-brandenburg.de/produkte/opendata/geometrienOD.asp?Kat=6301">Amt für Statistik Berlin-Brandenburg</a> &amp; <a href="https://github.com/m-hoerz/berlin-shapes">m-hoerz/berlin-shapes</a> - Energiedaten: <a href="http://netzdaten-berlin.de/web/guest/suchen/-/details/web-service-last-und-erzeugung-berlin">Stromnetz Berlin</a> - API: <a href="https://github.com/stefanw/smeterengine-json">stefanw/smeterengine-json</a> - Created by: <a href="http://www.michael-hoerz.de/">Michael Hörz</a>, Felix Ebert at <a href="http://energyhack.de">Energy Hackday Berlin</a> - GitHub: <a href="https://github.com/felixebert/energyhack">felixebert/energyhack</a>';
-			L.tileLayer('http://{s}.tile.cloudmade.com/036a729cf53d4388a8ec345e1543ef53/44094/256/{z}/{x}/{y}.png', {
+			var attribution = '<a href="http://www.mapbox.com/about/maps/" target="_blank">Terms &amp; Feedback</a>, Ortsteil-Geometrien: <a href="https://www.statistik-berlin-brandenburg.de/produkte/opendata/geometrienOD.asp?Kat=6301">Amt für Statistik Berlin-Brandenburg</a> &amp; <a href="https://github.com/m-hoerz/berlin-shapes">m-hoerz/berlin-shapes</a> - Energiedaten: <a href="http://netzdaten-berlin.de/web/guest/suchen/-/details/web-service-last-und-erzeugung-berlin">Stromnetz Berlin</a> - API: <a href="https://github.com/stefanw/smeterengine-json">stefanw/smeterengine-json</a> - Created by: <a href="http://www.michael-hoerz.de/">Michael Hörz</a>, Felix Ebert at <a href="http://energyhack.de">Energy Hackday Berlin</a> - GitHub: <a href="https://github.com/felixebert/energyhack">felixebert/energyhack</a>';
+			L.tileLayer('https://{s}.tiles.mapbox.com/v3/felix-ebert.i4fh1iml/{z}/{x}/{y}.png', {
 				'attribution': attribution,
 				'maxZoom': 18
 			}).addTo(this.leafletMap);
